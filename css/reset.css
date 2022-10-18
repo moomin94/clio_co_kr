@@ -1,6 +1,7 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 html,body{ height: 100%; }
-body{ font-family: '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif; }
+body{ font-family: 'Noto Sans KR', sans-serif; line-height: 1.2; color: #666; letter-spacing: -0.05em;}
 *, :after, :before { box-sizing:border-box; }
 *{ margin: 0; padding: 0; color: #666666;}
 /* canvas, img, picture, svg, video { display: block; max-width: 100%; } */
@@ -8,4 +9,4 @@ button, input, select, textarea { font:inherit; }
 /* h1, h2, h3, h4, h5, h6, p { overflow-wrap: break-word; } */
 ul,ol,li { list-style: none;}
 a { color: #666666; text-decoration: none; }
-button { border: 0; cursor: pointer; }
+button { border: 0; cursor: pointer; background-color: rgba(0,0,0,0)}
