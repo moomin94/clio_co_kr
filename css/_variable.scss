@@ -1,2 +1,56 @@
 $point-color: #f37420;
 $point-color2: #007aff;
+
+@mixin h3-title {
+  font-size: 34px;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+@mixin product-list($width) {
+  width: $width;
+  display: flex;
+  justify-content: space-between;
+  li {
+      width: 180px;
+      margin-right: 30px;
+      img {
+          display: inline-block;
+          width: 180px;
+      }
+      .info {
+          font-size: 12px;
+          margin: 20px 0 5px;
+          color: #999999;
+      }
+      .title {
+          height: 40px;
+      }
+      .cost {
+          font-weight: 600;
+          font-size: 18px;
+          color: #333333;
+          margin: 8px 0;
+          .sale {
+              color: $point-color;
+          }
+          .original {
+              font-size: 14px;
+              text-decoration: line-through;
+          }
+      }
+      .btn {
+          font-size: 12px;
+          color: #ffffff;
+          padding: 3px 8px;
+          margin-top: 8px;
+          &.new {
+              background-color: $point-color2;
+          }
+          &.best {
+              background-color: $point-color;
+          }
+      }
+
+  }
+}

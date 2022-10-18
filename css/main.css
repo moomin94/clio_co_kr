@@ -328,4 +328,111 @@
 }
 .main-wrap .main-btn-wrap li span {
   font-weight: 600;
+}
+
+.banner-wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1260px;
+  width: 90%;
+  height: 130px;
+  margin: 6% auto;
+}
+.banner-wrap .banner {
+  width: 49%;
+  height: 100%;
+}
+.banner-wrap .banner.left {
+  background: url("../img/banner_img_1.jpg") no-repeat center/contain;
+}
+.banner-wrap .banner.right {
+  background: url("../img/banner_img_2.jpg") no-repeat center/contain;
+}
+
+.time-deal-wrap {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.time-deal-wrap h3 {
+  font-size: 34px;
+  color: #333333;
+  margin-bottom: 25px;
+}
+.time-deal-wrap > p {
+  font-size: 36px;
+  color: #333333;
+  letter-spacing: 2px;
+}
+.time-deal-wrap > p span {
+  color: #333333;
+  font-weight: 600;
+  margin: 0 20px;
+}
+.time-deal-wrap .banner-wrap {
+  width: 100%;
+  height: 220px;
+  margin: 0;
+  margin-top: 35px;
+}
+.time-deal-wrap .banner-wrap .banner {
+  display: flex;
+  align-items: center;
+  width: 49%;
+}
+.time-deal-wrap .banner-wrap .banner.left {
+  background: none;
+  background-color: #f4f4f4;
+}
+.time-deal-wrap .banner-wrap .banner.right {
+  background: none;
+  background-color: #f4f4f4;
+}
+.time-deal-wrap .banner-wrap .banner img {
+  width: auto;
+  height: 100%;
+}
+.time-deal-wrap .banner-wrap .banner .text-wrap {
+  padding: 0 35px;
+  text-align: left;
+}
+.time-deal-wrap .banner-wrap .banner .text-wrap .title {
+  font-size: 22px;
+  color: #333333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.time-deal-wrap .banner-wrap .banner .text-wrap .cost {
+  font-weight: 600;
+  font-size: 26px;
+  color: #333333;
+}
+.time-deal-wrap .banner-wrap .banner .text-wrap .cost .sale {
+  color: #f37420;
+  margin-left: 8px;
+}
+.time-deal-wrap .banner-wrap .banner .text-wrap .cost .original {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin-right: 8px;
+}
+
+.best-new-wrap {
+  max-width: 1260px;
+  width: 100%;
+  margin: 6% auto;
+  text-align: center;
+}
+.best-new-wrap h3 {
+  font-size: 34px;
+  color: #333333;
+  margin-bottom: 25px;
+}
+.best-new-wrap .product-wrap {
+  position: relative;
+}
+.best-new-wrap .product-wrap > li > a {
+  position: absolute;
 }/*# sourceMappingURL=main.css.map */
