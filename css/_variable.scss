@@ -7,16 +7,15 @@ $point-color2: #007aff;
   margin-bottom: 25px;
 }
 
-@mixin product-list($width) {
+@mixin product-list($width, $width2) {
   width: $width;
-  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   li {
-      width: 180px;
-      margin-right: 30px;
+      width: $width2;
       img {
           display: inline-block;
-          width: 180px;
+          width: 100%;
       }
       .info {
           font-size: 12px;
