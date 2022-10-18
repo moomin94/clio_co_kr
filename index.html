@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="./img/favicon1.ico">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/mediaquery.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <script src="./js/common.js"></script>
 </head>
@@ -43,7 +44,7 @@
           <ul class="main-nav all">
             <li>
               <a href="#"><i class="fa-solid fa-bars menu-btn"></i>전체 카테고리</a>
-              <ul class="sub-nav">
+              <ul class="sub-nav all">
                 <li><a href="#">오늘의특가</a></li>
                 <li><a href="#">카테고리별</a></li>
                 <li><a href="#">피부고민별</a></li>
@@ -54,7 +55,7 @@
               </ul>
             </li>
           </ul>
-          <ul class="main-nav">
+          <ul class="main-nav new">
             <li>
               <a href="#">오특</a>
             </li>
@@ -65,12 +66,12 @@
               <a href="#">베스트</a>
             </li>
           </ul>
-          <ul class="main-nav">
+          <ul class="main-nav area">
             <li>
               <a href="#">CLIO</a>
-              <div class="sub-nav-area">
-                <h2>클리오</h2>
+              <div class="sub-nav-area clio">
                 <ul class="sub-nav">
+                  <h2>클리오</h2>
                   <li><a href="#">전체보기</a></li>
                   <li><a href="#">베이스/선</a></li>
                   <li><a href="#">립</a></li>
@@ -83,28 +84,32 @@
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
-                      <p>#런칭한달만에 #베스트 #퍼프증정까지!</p>
-                      <p>킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 734</p>
+                      <p class="info">#런칭한달만에 #베스트 #퍼프증정까지!</p>
+                      <p class="title">킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 734</p>
+                      <button class="btn new">NEW</button>
+                      <button class="btn best">BEST</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_2.jpg" alt="킬커버 파운웨어 파운데이션">
-                      <p>#찰떡궁합 #스파츌라 #한정수량증정!</p>
-                      <p>킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 26새벽배송</p>
+                      <p class="info">#찰떡궁합 #스파츌라 #한정수량증정!</p>
+                      <p class="title">킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 26</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_3.jpg" alt="데일리 뽀글이 파우치">
-                      <p>#수납력갑 #도톰폭신 #감성컬러</p>
-                      <p>[NEW] 데일리 뽀글이 파우치</p>
-                      <p>20% 9,600원 12,000</p>
-                      <p>리뷰 6</p>
+                      <p class="info">#수납력갑 #도톰폭신 #감성컬러</p>
+                      <p class="title">[NEW] 데일리 뽀글이 파우치</p>
+                      <p class="cost"><span class="sale">20%</span> 9,600원 <span class="original">12,000</span></p>
+                      <p class="review">리뷰 6</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                 </ul>
@@ -112,9 +117,9 @@
             </li>
             <li>
               <a href="#">peripera</a>
-              <div class="sub-nav-area">
-                <h2>페리페라</h2>
+              <div class="sub-nav-area peripera">
                 <ul class="sub-nav">
+                  <h2>페리페라</h2>
                   <li><a href="#">전체보기</a></li>
                   <li><a href="#">베이스/선</a></li>
                   <li><a href="#">립</a></li>
@@ -126,29 +131,33 @@
                 <ul class="sub-list">
                   <li>
                     <a href="#">
-                      <img src="./img/sub_list_clio_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
-                      <p>#런칭한달만에 #베스트 #퍼프증정까지!</p>
-                      <p>킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 734</p>
+                      <img src="./img/sub_list_peri_1.jpg" alt="아이팔레트">
+                      <p class="info">#빈티지니팅 #컬러무드 #신상컬러출시!</p>
+                      <p class="title">[NEW 컬러] 심플레인 아이 팔레트 [증정] 워터풀네일</p>
+                      <p class="cost"><span class="sale">30%</span> 16,800원 <span class="original">24,000</span></p>
+                      <p class="review">리뷰 255</p>
+                      <button class="btn new">NEW</button>
+                      <button class="btn best">BEST</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="./img/sub_list_clio_2.jpg" alt="킬커버 파운웨어 파운데이션">
-                      <p>#찰떡궁합 #스파츌라 #한정수량증정!</p>
-                      <p>킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 26새벽배송</p>
+                      <img src="./img/sub_list_peri_2.jpg" alt="워터 블러 틴트">
+                      <p class="info">#6,7,8호 #가을무드 #신상컬러출시!</p>
+                      <p class="title">[NEW 컬러/1+1] 심플레인 워터 블러틴트 [증정] 워</p>
+                      <p class="cost"><span class="sale">35%</span> 15,600원 <span class="original">24,000</span></p>
+                      <p class="review">리뷰 429</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="./img/sub_list_clio_3.jpg" alt="데일리 뽀글이 파우치">
-                      <p>#수납력갑 #도톰폭신 #감성컬러</p>
-                      <p>[NEW] 데일리 뽀글이 파우치</p>
-                      <p>20% 9,600원 12,000</p>
-                      <p>리뷰 6</p>
+                      <img src="./img/sub_list_peri_3.jpg" alt="데일리 뽀글이 파우치">
+                      <p class="info">#튼튼래쉬에 #영양한겹 #저자극케어</p>
+                      <p class="title">심플레인 래쉬앰플 (속눈썹 영양제)</p>
+                      <p class="cost"><span class="sale">32%</span> 9,500원 <span class="original">14,000</span></p>
+                      <p class="review">리뷰 213</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                 </ul>
@@ -156,9 +165,9 @@
             </li>
             <li>
               <a href="#">goodal</a>
-              <div class="sub-nav-area">
-                <h2>구달</h2>
+              <div class="sub-nav-area goodal">
                 <ul class="sub-nav">
+                  <h2>구달</h2>
                   <li><a href="#">전체보기</a></li>
                   <li><a href="#">토너/미스트</a></li>
                   <li><a href="#">세럼/에센스</a></li>
@@ -171,28 +180,32 @@
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
-                      <p>#런칭한달만에 #베스트 #퍼프증정까지!</p>
-                      <p>킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 734</p>
+                      <p class="info">#런칭한달만에 #베스트 #퍼프증정까지!</p>
+                      <p class="title">킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 734</p>
+                      <button class="btn new">NEW</button>
+                      <button class="btn best">BEST</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_2.jpg" alt="킬커버 파운웨어 파운데이션">
-                      <p>#찰떡궁합 #스파츌라 #한정수량증정!</p>
-                      <p>킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 26새벽배송</p>
+                      <p class="info">#찰떡궁합 #스파츌라 #한정수량증정!</p>
+                      <p class="title">킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 26</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_3.jpg" alt="데일리 뽀글이 파우치">
-                      <p>#수납력갑 #도톰폭신 #감성컬러</p>
-                      <p>[NEW] 데일리 뽀글이 파우치</p>
-                      <p>20% 9,600원 12,000</p>
-                      <p>리뷰 6</p>
+                      <p class="info">#수납력갑 #도톰폭신 #감성컬러</p>
+                      <p class="title">[NEW] 데일리 뽀글이 파우치</p>
+                      <p class="cost"><span class="sale">20%</span> 9,600원 <span class="original">12,000</span></p>
+                      <p class="review">리뷰 6</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                 </ul>
@@ -200,9 +213,9 @@
             </li>
             <li>
               <a href="#">Dermatory</a>
-              <div class="sub-nav-area">
-                <h2>더마토리</h2>
+              <div class="sub-nav-area dermatory">
                 <ul class="sub-nav">
+                  <h2>더마토리</h2>
                   <li><a href="#">전체보기</a></li>
                   <li><a href="#">프로 더마</a></li>
                   <li><a href="#">프로 트러블</a></li>
@@ -215,28 +228,32 @@
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
-                      <p>#런칭한달만에 #베스트 #퍼프증정까지!</p>
-                      <p>킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 734</p>
+                      <p class="info">#런칭한달만에 #베스트 #퍼프증정까지!</p>
+                      <p class="title">킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 734</p>
+                      <button class="btn new">NEW</button>
+                      <button class="btn best">BEST</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_2.jpg" alt="킬커버 파운웨어 파운데이션">
-                      <p>#찰떡궁합 #스파츌라 #한정수량증정!</p>
-                      <p>킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 26새벽배송</p>
+                      <p class="info">#찰떡궁합 #스파츌라 #한정수량증정!</p>
+                      <p class="title">킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 26</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_3.jpg" alt="데일리 뽀글이 파우치">
-                      <p>#수납력갑 #도톰폭신 #감성컬러</p>
-                      <p>[NEW] 데일리 뽀글이 파우치</p>
-                      <p>20% 9,600원 12,000</p>
-                      <p>리뷰 6</p>
+                      <p class="info">#수납력갑 #도톰폭신 #감성컬러</p>
+                      <p class="title">[NEW] 데일리 뽀글이 파우치</p>
+                      <p class="cost"><span class="sale">20%</span> 9,600원 <span class="original">12,000</span></p>
+                      <p class="review">리뷰 6</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                 </ul>
@@ -244,9 +261,9 @@
             </li>
             <li>
               <a href="#">HealingBird</a>
-              <div class="sub-nav-area">
-                <h2>힐링버드</h2>
+              <div class="sub-nav-area healing">
                 <ul class="sub-nav">
+                  <h2>힐링버드</h2>
                   <li><a href="#">전체보기</a></li>
                   <li><a href="#">헤어</a></li>
                   <li><a href="#">바디</a></li>
@@ -256,28 +273,32 @@
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
-                      <p>#런칭한달만에 #베스트 #퍼프증정까지!</p>
-                      <p>킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 734</p>
+                      <p class="info">#런칭한달만에 #베스트 #퍼프증정까지!</p>
+                      <p class="title">킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 734</p>
+                      <button class="btn new">NEW</button>
+                      <button class="btn best">BEST</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_2.jpg" alt="킬커버 파운웨어 파운데이션">
-                      <p>#찰떡궁합 #스파츌라 #한정수량증정!</p>
-                      <p>킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 26새벽배송</p>
+                      <p class="info">#찰떡궁합 #스파츌라 #한정수량증정!</p>
+                      <p class="title">킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 26</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_3.jpg" alt="데일리 뽀글이 파우치">
-                      <p>#수납력갑 #도톰폭신 #감성컬러</p>
-                      <p>[NEW] 데일리 뽀글이 파우치</p>
-                      <p>20% 9,600원 12,000</p>
-                      <p>리뷰 6</p>
+                      <p class="info">#수납력갑 #도톰폭신 #감성컬러</p>
+                      <p class="title">[NEW] 데일리 뽀글이 파우치</p>
+                      <p class="cost"><span class="sale">20%</span> 9,600원 <span class="original">12,000</span></p>
+                      <p class="review">리뷰 6</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                 </ul>
@@ -285,9 +306,9 @@
             </li>
             <li>
               <a href="#">TYPE No.</a>
-              <div class="sub-nav-area">
-                <h2>타입넘버</h2>
+              <div class="sub-nav-area type">
                 <ul class="sub-nav">
+                  <h2>타입넘버</h2>
                   <li><a href="#">전체보기</a></li>
                   <li><a href="#">원더바이브</a></li>
                   <li><a href="#">윈드스테이</a></li>
@@ -297,28 +318,32 @@
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
-                      <p>#런칭한달만에 #베스트 #퍼프증정까지!</p>
-                      <p>킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 734</p>
+                      <p class="info">#런칭한달만에 #베스트 #퍼프증정까지!</p>
+                      <p class="title">킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 734</p>
+                      <button class="btn new">NEW</button>
+                      <button class="btn best">BEST</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_2.jpg" alt="킬커버 파운웨어 파운데이션">
-                      <p>#찰떡궁합 #스파츌라 #한정수량증정!</p>
-                      <p>킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 26새벽배송</p>
+                      <p class="info">#찰떡궁합 #스파츌라 #한정수량증정!</p>
+                      <p class="title">킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 26</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_3.jpg" alt="데일리 뽀글이 파우치">
-                      <p>#수납력갑 #도톰폭신 #감성컬러</p>
-                      <p>[NEW] 데일리 뽀글이 파우치</p>
-                      <p>20% 9,600원 12,000</p>
-                      <p>리뷰 6</p>
+                      <p class="info">#수납력갑 #도톰폭신 #감성컬러</p>
+                      <p class="title">[NEW] 데일리 뽀글이 파우치</p>
+                      <p class="cost"><span class="sale">20%</span> 9,600원 <span class="original">12,000</span></p>
+                      <p class="review">리뷰 6</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                 </ul>
@@ -326,9 +351,9 @@
             </li>
             <li>
               <a href="#">A.Black</a>
-              <div class="sub-nav-area">
-                <h2>에이블랙</h2>
+              <div class="sub-nav-area ablack">
                 <ul class="sub-nav">
+                  <h2>에이블랙</h2>
                   <li><a href="#">전체보기</a></li>
                   <li><a href="#">아이</a></li>
                   <li><a href="#">립</a></li>
@@ -337,28 +362,32 @@
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
-                      <p>#런칭한달만에 #베스트 #퍼프증정까지!</p>
-                      <p>킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 734</p>
+                      <p class="info">#런칭한달만에 #베스트 #퍼프증정까지!</p>
+                      <p class="title">킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 734</p>
+                      <button class="btn new">NEW</button>
+                      <button class="btn best">BEST</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_2.jpg" alt="킬커버 파운웨어 파운데이션">
-                      <p>#찰떡궁합 #스파츌라 #한정수량증정!</p>
-                      <p>킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 26새벽배송</p>
+                      <p class="info">#찰떡궁합 #스파츌라 #한정수량증정!</p>
+                      <p class="title">킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 26</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_3.jpg" alt="데일리 뽀글이 파우치">
-                      <p>#수납력갑 #도톰폭신 #감성컬러</p>
-                      <p>[NEW] 데일리 뽀글이 파우치</p>
-                      <p>20% 9,600원 12,000</p>
-                      <p>리뷰 6</p>
+                      <p class="info">#수납력갑 #도톰폭신 #감성컬러</p>
+                      <p class="title">[NEW] 데일리 뽀글이 파우치</p>
+                      <p class="cost"><span class="sale">20%</span> 9,600원 <span class="original">12,000</span></p>
+                      <p class="review">리뷰 6</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                 </ul>
@@ -366,9 +395,9 @@
             </li>
             <li>
               <a href="#">TWINKLE POP</a>
-              <div class="sub-nav-area">
-                <h2>트윙클팝</h2>
+              <div class="sub-nav-area twinkle">
                 <ul class="sub-nav">
+                  <h2>트윙클팝</h2>
                   <li><a href="#">전체보기</a></li>
                   <li><a href="#">아이</a></li>
                 </ul>
@@ -376,28 +405,32 @@
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
-                      <p>#런칭한달만에 #베스트 #퍼프증정까지!</p>
-                      <p>킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 734</p>
+                      <p class="info">#런칭한달만에 #베스트 #퍼프증정까지!</p>
+                      <p class="title">킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 734</p>
+                      <button class="btn new">NEW</button>
+                      <button class="btn best">BEST</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_2.jpg" alt="킬커버 파운웨어 파운데이션">
-                      <p>#찰떡궁합 #스파츌라 #한정수량증정!</p>
-                      <p>킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 26새벽배송</p>
+                      <p class="info">#찰떡궁합 #스파츌라 #한정수량증정!</p>
+                      <p class="title">킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 26</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_3.jpg" alt="데일리 뽀글이 파우치">
-                      <p>#수납력갑 #도톰폭신 #감성컬러</p>
-                      <p>[NEW] 데일리 뽀글이 파우치</p>
-                      <p>20% 9,600원 12,000</p>
-                      <p>리뷰 6</p>
+                      <p class="info">#수납력갑 #도톰폭신 #감성컬러</p>
+                      <p class="title">[NEW] 데일리 뽀글이 파우치</p>
+                      <p class="cost"><span class="sale">20%</span> 9,600원 <span class="original">12,000</span></p>
+                      <p class="review">리뷰 6</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                 </ul>
@@ -405,9 +438,9 @@
             </li>
             <li>
               <a href="#">ALPHA.B</a>
-              <div class="sub-nav-area">
-                <h2>알파비</h2>
+              <div class="sub-nav-area alphab">
                 <ul class="sub-nav">
+                  <h2>알파비</h2>
                   <li><a href="#">전체보기</a></li>
                   <li><a href="#">토너/미스트</a></li>
                   <li><a href="#">앰플/크림</a></li>
@@ -417,82 +450,42 @@
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
-                      <p>#런칭한달만에 #베스트 #퍼프증정까지!</p>
-                      <p>킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 734</p>
+                      <p class="info">#런칭한달만에 #베스트 #퍼프증정까지!</p>
+                      <p class="title">킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 734</p>
+                      <button class="btn new">NEW</button>
+                      <button class="btn best">BEST</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_2.jpg" alt="킬커버 파운웨어 파운데이션">
-                      <p>#찰떡궁합 #스파츌라 #한정수량증정!</p>
-                      <p>킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 26새벽배송</p>
+                      <p class="info">#찰떡궁합 #스파츌라 #한정수량증정!</p>
+                      <p class="title">킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 26</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <img src="./img/sub_list_clio_3.jpg" alt="데일리 뽀글이 파우치">
-                      <p>#수납력갑 #도톰폭신 #감성컬러</p>
-                      <p>[NEW] 데일리 뽀글이 파우치</p>
-                      <p>20% 9,600원 12,000</p>
-                      <p>리뷰 6</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#">TRUE RX</a>
-              <div class="sub-nav-area">
-                <h2>트루알엑스</h2>
-                <ul class="sub-nav">
-                  <li><a href="#">전체보기</a></li>
-                  <li><a href="#">리치콜라겐</a></li>
-                  <li><a href="#">리치엘라스틴</a></li>
-                  <li><a href="#">보라지유</a></li>
-                  <li><a href="#">지노 프로바이오틱스</a></li>
-                  <li><a href="#">스킨 프로바이오틱스</a></li>
-                  <li><a href="#">다이어트 프로바이오틱스</a></li>
-                </ul>
-                <ul class="sub-list">
-                  <li>
-                    <a href="#">
-                      <img src="./img/sub_list_clio_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
-                      <p>#런칭한달만에 #베스트 #퍼프증정까지!</p>
-                      <p>킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 734</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="./img/sub_list_clio_2.jpg" alt="킬커버 파운웨어 파운데이션">
-                      <p>#찰떡궁합 #스파츌라 #한정수량증정!</p>
-                      <p>킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
-                      <p>30% 23,800원 34,000</p>
-                      <p>리뷰 26새벽배송</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="./img/sub_list_clio_3.jpg" alt="데일리 뽀글이 파우치">
-                      <p>#수납력갑 #도톰폭신 #감성컬러</p>
-                      <p>[NEW] 데일리 뽀글이 파우치</p>
-                      <p>20% 9,600원 12,000</p>
-                      <p>리뷰 6</p>
+                      <p class="info">#수납력갑 #도톰폭신 #감성컬러</p>
+                      <p class="title">[NEW] 데일리 뽀글이 파우치</p>
+                      <p class="cost"><span class="sale">20%</span> 9,600원 <span class="original">12,000</span></p>
+                      <p class="review">리뷰 6</p>
+                      <button class="btn new">NEW</button>
                     </a>
                   </li>
                 </ul>
               </div>
             </li>
           </ul>
-          <ul class="main-nav">
+          <ul class="main-nav event">
             <li>
               <a href="#">이벤트</a>
-              <ul class="sub-nav">
+              <ul class="sub-nav event">
                 <li><a href="#">진행중인 이벤트</a></li>
                 <li><a href="#">BEAUTY TESTER</a></li>
                 <li><a href="#">공식몰 멤버십 혜택</a></li>
@@ -503,7 +496,7 @@
               <a href="#">선물하기</a>
             </li>
           </ul>
-          <ul class="main-nav">
+          <ul class="main-nav review">
             <li>
               <a href="#">리뷰</a>
             </li>
