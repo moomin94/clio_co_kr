@@ -422,8 +422,15 @@
             > li {
                 margin-bottom: 80px;
                 a {
+                    width: 100%;
+                    overflow: hidden;
                     position: relative;
                     display: inline-block;
+                    img {
+                        width: auto;
+                        height: 360px;
+                        margin-left: -70px;
+                    }
                     &::before {
                         content: '';
                         position: absolute;
@@ -431,7 +438,7 @@
                         left: 10px;
                         width: 60px;
                         height: 60px;
-                        background: url('../img/coupon_img.png') no-repeat center / cover;
+                        background: url('../img/coupon_img_10.png') no-repeat center / cover;
                     }
                     .cost {
                         .original {
@@ -662,6 +669,7 @@
                     img {
                         width: auto;
                         height: 360px;
+                        margin-left: -40px;
                     }
                     &::before {
                         content: '';

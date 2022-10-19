@@ -547,8 +547,15 @@
   margin-bottom: 80px;
 }
 .best-new-wrap .product-wrap .product-list > li a {
+  width: 100%;
+  overflow: hidden;
   position: relative;
   display: inline-block;
+}
+.best-new-wrap .product-wrap .product-list > li a img {
+  width: auto;
+  height: 360px;
+  margin-left: -70px;
 }
 .best-new-wrap .product-wrap .product-list > li a::before {
   content: "";
@@ -557,7 +564,7 @@
   left: 10px;
   width: 60px;
   height: 60px;
-  background: url("../img/coupon_img.png") no-repeat center/cover;
+  background: url("../img/coupon_img_10.png") no-repeat center/cover;
 }
 .best-new-wrap .product-wrap .product-list > li a .cost .original {
   font-weight: 400;
@@ -863,6 +870,7 @@
 .popular-wrap .product-wrap .product-list > li a img {
   width: auto;
   height: 360px;
+  margin-left: -40px;
 }
 .popular-wrap .product-wrap .product-list > li a::before {
   content: "";
