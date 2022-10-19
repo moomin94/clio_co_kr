@@ -247,6 +247,8 @@
 }
 .header-wrap .header-bottom nav .main-nav > li > .sub-nav-area .sub-list li .info {
   font-size: 12px;
+  height: 14px;
+  overflow: hidden;
   margin: 20px 0 5px;
   color: #999999;
 }
@@ -265,6 +267,20 @@
 .header-wrap .header-bottom nav .main-nav > li > .sub-nav-area .sub-list li .cost .original {
   font-size: 14px;
   text-decoration: line-through;
+}
+.header-wrap .header-bottom nav .main-nav > li > .sub-nav-area .sub-list li .review {
+  position: relative;
+}
+.header-wrap .header-bottom nav .main-nav > li > .sub-nav-area .sub-list li .review span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 72px;
+  height: 14px;
+  margin-left: 10px;
+  background: url("../img/pc_ico_dawn_txt.png") 0 0 no-repeat;
+  background-size: 72px;
+  text-indent: -9999px;
+  overflow: hidden;
 }
 .header-wrap .header-bottom nav .main-nav > li > .sub-nav-area .sub-list li .btn {
   font-size: 12px;
@@ -395,7 +411,7 @@
   height: 100%;
 }
 .time-deal-wrap .banner-wrap .banner .text-wrap {
-  padding: 0 35px;
+  padding: 0 6%;
   text-align: left;
 }
 .time-deal-wrap .banner-wrap .banner .text-wrap .title {
@@ -421,8 +437,10 @@
 }
 
 .best-new-wrap {
+  position: relative;
   max-width: 1260px;
   width: 100%;
+  height: auto;
   padding: 0 15px;
   margin: 6% auto;
   text-align: center;
@@ -434,7 +452,7 @@
 }
 .best-new-wrap .product-wrap {
   position: relative;
-  width: 100%;
+  height: auto;
   margin-top: 55px;
 }
 .best-new-wrap .product-wrap .product-btn {
@@ -454,7 +472,6 @@
 }
 .best-new-wrap .product-wrap .product-list {
   display: none;
-  position: absolute;
   margin-top: 45px;
   text-align: left;
   width: 100%;
@@ -470,6 +487,8 @@
 }
 .best-new-wrap .product-wrap .product-list li .info {
   font-size: 12px;
+  height: 14px;
+  overflow: hidden;
   margin: 20px 0 5px;
   color: #999999;
 }
@@ -489,6 +508,20 @@
   font-size: 14px;
   text-decoration: line-through;
 }
+.best-new-wrap .product-wrap .product-list li .review {
+  position: relative;
+}
+.best-new-wrap .product-wrap .product-list li .review span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 72px;
+  height: 14px;
+  margin-left: 10px;
+  background: url("../img/pc_ico_dawn_txt.png") 0 0 no-repeat;
+  background-size: 72px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
 .best-new-wrap .product-wrap .product-list li .btn {
   font-size: 12px;
   color: #ffffff;
@@ -507,6 +540,22 @@
 .best-new-wrap .product-wrap .product-list > li {
   margin-bottom: 80px;
 }
+.best-new-wrap .product-wrap .product-list > li a {
+  position: relative;
+  display: inline-block;
+}
+.best-new-wrap .product-wrap .product-list > li a::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/coupon_img.png") no-repeat center/cover;
+}
+.best-new-wrap .product-wrap .product-list > li a .cost .original {
+  font-weight: 400;
+}
 .best-new-wrap .product-wrap .product-list .more {
   position: absolute;
   bottom: -20px;
@@ -519,4 +568,44 @@
   text-align: center;
   font-size: 13px;
   font-weight: 600;
+}
+
+.keyword-wrap {
+  position: relative;
+  max-width: 1260px;
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+  margin: 6% auto;
+  text-align: center;
+}
+.keyword-wrap h3 {
+  font-size: 34px;
+  color: #333333;
+  margin-bottom: 25px;
+  margin-bottom: 55px;
+}
+.keyword-wrap .keyword-list {
+  display: flex;
+  justify-content: space-between;
+}
+.keyword-wrap .keyword-list li {
+  width: 11%;
+  height: 11%;
+}
+.keyword-wrap .keyword-list li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.keyword-wrap .keyword-list li a img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+.keyword-wrap .keyword-list li a h4 {
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #777777;
 }/*# sourceMappingURL=main.css.map */

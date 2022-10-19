@@ -353,7 +353,7 @@
                 height: 100%;
             }
             .text-wrap {
-                padding: 0 35px;
+                padding: 0 6%;
                 text-align: left;
                 .title {
                     font-size: 22px;
@@ -382,8 +382,10 @@
 }
 
 .best-new-wrap {
+    position: relative;
     max-width: 1260px;
     width: 100%;
+    height: auto;
     padding: 0 15px;
     margin: 6% auto;
     text-align: center;
@@ -392,7 +394,7 @@
     }
     .product-wrap {
         position: relative;
-        width: 100%;
+        height: auto;
         margin-top: 55px;
         .product-btn {
             padding: 3px 22px;
@@ -411,7 +413,6 @@
         }
         .product-list {
             display: none;
-            position: absolute;
             margin-top: 45px;
             text-align: left;
             @include product-list(100%,23%);
@@ -420,6 +421,24 @@
             }
             > li {
                 margin-bottom: 80px;
+                a {
+                    position: relative;
+                    display: inline-block;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        width: 60px;
+                        height: 60px;
+                        background: url('../img/coupon_img.png') no-repeat center / cover;
+                    }
+                    .cost {
+                        .original {
+                            font-weight: 400;
+                        }
+                    }
+                }
             }
             .more {
                 position: absolute;
@@ -438,3 +457,41 @@
     }
 }
 
+.keyword-wrap {
+    position: relative;
+    max-width: 1260px;
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    margin: 6% auto;
+    text-align: center;
+    h3 {
+        @include h3-title;
+        margin-bottom: 55px;
+    }
+    .keyword-list {
+        display: flex;
+        justify-content: space-between;
+        li {
+            width: 11%;
+            height: 11%;
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                img {
+                    display: inline-block;
+                    width: 100%;
+                    height: auto;
+                }
+                h4 {
+                    font-size: 20px;
+                    margin-top: 15px;
+                    font-weight: 500;
+                    color: #777777;
+                }
+            }
+        }
+
+    }
+}

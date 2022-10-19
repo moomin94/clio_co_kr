@@ -1,4 +1,4 @@
-@media screen and (max-width:1650px){
+@media screen and (max-width:1661px){
   .header-wrap{
     .header-bottom {
       nav{
@@ -11,7 +11,7 @@
   } 
 }
 
-@media screen and (max-width:1510px){
+@media screen and (max-width:1520px){
   .header-wrap{
     .header-bottom{
       nav {
@@ -39,7 +39,7 @@
   } 
 }
 
-@media screen and (max-width:1380px){
+@media screen and (max-width:1405px){
   .header-wrap{
     .header-bottom{
       nav {
@@ -58,10 +58,10 @@
   } 
 }
 
-@media screen and (max-width:1230px){
+@media screen and (max-width:1240px){
   .header-wrap{
     .header-bottom{
-      width: 100vw;
+      width: 100%;
       nav {
         max-width: 800px;
         .main-nav {
@@ -70,8 +70,7 @@
           }
           > li {
             > .sub-nav-area {
-              width: 850px;
-              padding: 30px 0 0 20px;
+              width: 840px;
             }
           }
         }
