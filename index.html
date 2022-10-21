@@ -505,16 +505,18 @@
 
     <div class="main-wrap">
       <ul class="main-img-wrap">
-        <li><img src="./img/main_bg_1.jpg" alt="main-img-1"></li>
-        <li><img src="./img/main_bg_2.jpg" alt="main-img-2"></li>
-        <li><img src="./img/main_bg_3.jpg" alt="main-img-3"></li>
-        <li><img src="./img/main_bg_4.jpg" alt="main-img-4"></li>
+        <li id="last-clone" class="slide-item" data-id="4"><img src="./img/main_bg_4.jpg" alt="main-img-4"></li>
+        <li class="slide-item" data-id="1"><img src="./img/main_bg_1.jpg" alt="main-img-1"></li>
+        <li class="slide-item" data-id="2"><img src="./img/main_bg_2.jpg" alt="main-img-2"></li>
+        <li class="slide-item" data-id="3"><img src="./img/main_bg_3.jpg" alt="main-img-3"></li>
+        <li class="slide-item" data-id="4"><img src="./img/main_bg_4.jpg" alt="main-img-4"></li>
+        <li id="first-clone" class="slide-item" data-id="1"><img src="./img/main_bg_1.jpg" alt="main-img-1"></li>
       </ul>
       <ul class="main-btn-wrap">
-        <li><button><i class="fa-solid fa-chevron-left"></i></button></li>
-        <li><span class="now">1</span> / 4</li>
-        <li><button><i class="fa-solid fa-chevron-right"></i></button></li>
-        <li><button><i class="fa-solid fa-pause"></i></button></li>
+        <li class="prev-btn"><button><i class="fa-solid fa-chevron-left"></i></button></li>
+        <li class="page"><span class="now">1</span> / 4</li>
+        <li class="next-btn"><button><i class="fa-solid fa-chevron-right"></i></button></li>
+        <li class="play-pause-btn"><button><i class="fa-solid fa-pause"></i></button></li>
       </ul>
     </div>
 
@@ -525,7 +527,7 @@
     
     <div class="time-deal-wrap">
       <h3>TIME DEAL</h3>
-      <p><span>00</span>:<span>00</span>:<span>00</span></p>
+      <p class="real-time"><span class="hr">00</span>:<span class="min">00</span>:<span class="sec">00</span></p>
       <div class="banner-wrap time-deal">
         <a href="#" class="banner left">
           <img src="./img/time_deal_img_1.jpg" alt="time_deal_img_1">
@@ -811,8 +813,8 @@
         </ul>
       </div>
       <div class="btn-wrap">
-        <button data-id="0" class="on">1</button>
-        <button data-id="1">2</button>
+        <button class="on online-btn">1</button>
+        <button class="online-btn">2</button>
       </div>
     </div>
 
@@ -821,12 +823,12 @@
       <div class="product-wrap">
         <div class="btn-wrap">
           <ul>
-            <li class="on">베이스</li>
-            <li>립</li>
-            <li>아이</li>
-            <li>치크&컨투어</li>
-            <li>기초케어</li>
-            <li>헤어&바디</li>
+            <li class="on popular-btn">베이스</li>
+            <li class="popular-btn">립</li>
+            <li class="popular-btn">아이</li>
+            <li class="popular-btn">치크&컨투어</li>
+            <li class="popular-btn">기초케어</li>
+            <li class="popular-btn">헤어&바디</li>
           </ul>
         </div>
         <ul class="product-list base on">
@@ -1154,9 +1156,21 @@
       </div>
       <div class="review-bottom">
         <div class="review-slide">
-          <button><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="review-prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
           <div class="slide-wrap">
             <ul>
+              <li id="review-last">
+                <a href="#">
+                  <img src="./img/review_bottom_img_4.jpg" alt="review img">
+                  <div class="txtbox">
+                    <h5 class="title">굿굿</h5>
+                    <p class="txt">펜슬 아이라이너 잘 안쓰는데 많은 사람들이 찬양을 하길래 한번 사봤어요 만족해요
+                      진짜 잘 안지워짐 ㅋ?ㅋ 적립금으로 엄청 싸게 샀고, 클리오 디자인 너무 맘에들어요!!
+                    </p>
+                    <span class="user-id">jkl***</span>
+                  </div>
+                </a>
+              </li>
               <li>
                 <a href="#">
                   <img src="./img/review_bottom_img_1.jpg" alt="review img">
@@ -1182,6 +1196,30 @@
                 </a>
               </li>
               <li>
+                <a href="#">
+                  <img src="./img/review_bottom_img_3.jpg" alt="review img">
+                  <div class="txtbox">
+                    <h5 class="title">커버력 대박적!</h5>
+                    <p class="txt">저는 얼굴에 잡티가 있어서 피부 표현할 때 커버력이 필수인데 이 제품은
+                      가벼우면서도 커버가 잘되서 넘 좋아요! 왜 이제서야 쓰게 됐는지~~~
+                    </p>
+                    <span class="user-id">ghi***</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/review_bottom_img_4.jpg" alt="review img">
+                  <div class="txtbox">
+                    <h5 class="title">굿굿</h5>
+                    <p class="txt">펜슬 아이라이너 잘 안쓰는데 많은 사람들이 찬양을 하길래 한번 사봤어요 만족해요
+                      진짜 잘 안지워짐 ㅋ?ㅋ 적립금으로 엄청 싸게 샀고, 클리오 디자인 너무 맘에들어요!!
+                    </p>
+                    <span class="user-id">jkl***</span>
+                  </div>
+                </a>
+              </li>
+              <li id="review-first">
                 <a href="#">
                   <img src="./img/review_bottom_img_1.jpg" alt="review img">
                   <div class="txtbox">
@@ -1207,7 +1245,7 @@
               </li>
             </ul>
           </div>
-          <button><i class="fa-solid fa-chevron-right"></i></button>
+          <button class="review-next-btn"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
         <a href="#" class="more">더보기<i class="fa-solid fa-chevron-right"></i></a>
       </div>
