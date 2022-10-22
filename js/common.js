@@ -1,6 +1,28 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function(){
+    // Happy Talk btn click event
+    const happyTalkBtn = document.querySelector('.happy-talk');
+    const happyTalkArea = document.querySelector('.happy-talk-area');
+    const happyTalkClose = document.querySelector('.happy-talk-area .close');
+    happyTalkBtn.addEventListener('click',function(){
+        happyTalkArea.classList.toggle('on');
+    });
+    happyTalkClose.addEventListener('click', function(){
+        happyTalkArea.classList.remove('on');
+    });
+
+    // Top btn click event
+    const topBtn = document.querySelector('.top-btn');
+    topBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        let i = document.documentElement.scrollTop;
+        let int = setInterval(function() {
+          window.scrollTo(0, i);
+          i -= 50;
+          if (i < 0) clearInterval(int);
+        }, 1);
+    });
 
     // Main-nav → Sub-nav show/hidden
     const areaBtn = document.querySelectorAll('.area > li > a');
@@ -214,7 +236,6 @@ document.addEventListener("DOMContentLoaded", function(){
         if (reviewItem[reviewCount].id === "review-first") {
             reviewSlide.style.transition = "none";
             reviewCount = reviewItem.length - reviewCount -1;
-            console.log(reviewCount);
             reviewSlide.style.transform = "translateX(" + -reviewSize * reviewCount + "%)";
         }
     });

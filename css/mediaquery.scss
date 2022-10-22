@@ -1,3 +1,4 @@
+@import '_variable';
 @media screen and (max-width:1661px){
   .header-wrap{
     .header-bottom {
@@ -77,4 +78,225 @@
       }
     }
   } 
+}
+
+@media screen and (max-width:1024px){
+  .header-wrap {
+    .header-top {
+      display: none;
+    }
+    .header-middle {
+      height: 60px;
+      h1 {
+        img {
+            width: auto;
+            height: 20px;
+        }
+    }
+    .search-area {
+        .search-form {
+            display: none;
+        }
+        .search-tag {
+            display: none;
+        }
+        .m-menu {
+          display: block; 
+        }
+      }
+    }
+    .header-bottom {
+      nav {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .m-nav {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .time-deal-wrap {
+    .banner-wrap {
+      width: 94%;
+      height: 20%;
+      margin: 0 auto;
+      margin-top: 35px;
+      .banner {
+        width: 48%;
+        overflow: hidden;
+        img {
+          width: 40%;
+          height: auto;
+        }
+        .text-wrap {
+          .title {
+            font-size: 18px;
+          }
+          .cost {
+            font-size: 20px;
+            .sale {
+              font-size: 18px;
+            }
+            .original {
+                font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .best-new-wrap {
+    .product-wrap {
+      .product-list {
+        margin: 0 auto;
+        margin-top: 45px;
+        @include product-list(80%, 46%);
+        > li {
+            a {
+                width: 100%;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-left: 0;
+                }
+            }
+        }
+      }
+    }
+  }
+  .keyword-wrap {
+    .keyword-list {
+      li {
+        a {
+          h4 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .banner-wrap.event {
+    .banner {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      height: 20vw;
+      &.left {
+        background-size: cover;
+      }
+      &.right {
+        background-size: cover;
+      }
+      p {
+          padding: 0 80px;
+          font-size: 2.4vw;
+          line-height: 1.6;
+          &:first-child {
+              margin-top: 6vw;
+          }
+      }
+    }
+  }
+  .online-wrap {
+    height: 75vw;
+    padding: 10vw 0;
+    .online-inner {
+      .online-list {
+        li {
+          a {
+            h4 {
+              font-size: 2vw;
+            }
+            p {
+              font-size: 1.8vw;
+            }
+          }
+        }
+      }
+    }
+  }
+  .popular-wrap {
+    .product-wrap {
+      .btn-wrap {
+        li {
+          font-size: 2vw;
+        }
+      }
+      .product-list {
+        margin: 0 auto;
+        margin-top: 45px;
+        @include product-list(80%, 46%);
+        > li {
+            a {
+                width: 100%;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-left: 0;
+                }
+            }
+        }
+      }
+    }
+  }
+  .review-wrap {
+    .review-top {
+      .review-inner {
+        height: 620px;
+        .review-list {
+          position: relative;
+          height: 620px;
+          overflow-x: auto;
+          overflow-y: hidden;
+          -webkit-overflow-scrolling: touch;		/* 끝에서 바운스 되도록*/
+          scroll-snap-type: x mandatory;
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+          white-space: nowrap;
+          li {
+            flex-shrink: 0;
+            white-space: nowrap;
+            width: 300px;
+            height: 580px;
+            &:not(:last-child){
+              margin-right: 20px;
+            }
+            a {
+              .txt-box {
+                padding: 40px 15px 0px 15px;
+                .item-box {
+                  .item-img {
+                    width: 40%;
+                    img {
+                      width: 100%;
+                    }
+                  }
+                  .item-txt {
+                      h5 {
+                          font-size: 16px;
+                          font-weight: 500;
+                      }
+                      .cost {
+                          font-size: 16px;
+                      }
+                  }
+                  .item-btn {
+                      width: 18%;
+                      display: flex;
+                      justify-content: space-between;
+                      button:first-child {
+                        margin-right: 5px;
+                      }
+                  }
+              }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
