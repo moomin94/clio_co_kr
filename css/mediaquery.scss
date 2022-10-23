@@ -109,6 +109,14 @@
       nav {
         opacity: 0;
         visibility: hidden;
+        .main-nav {
+          display: none;
+          > li {
+            .sub-nav-area {
+              display: none;
+            }
+          }
+        }
       }
       .m-nav {
         opacity: 1;
@@ -295,6 +303,498 @@
               }
             }
           }
+        }
+      }
+    }
+    .review-bottom {
+      .review-slide {
+          button {
+              i {
+                  font-size: 24px;
+              }
+          }
+          .slide-wrap {
+              height: 216px;
+              ul {
+                  li {
+                        display: flex;
+                        align-items: center;
+                        padding: 20px;
+                      a {
+                          align-items: center;;
+                          img {
+                              display: inline-block;
+                              width: 35%;
+                              min-width: 130px;
+                              height: auto;
+                          }
+                          .txtbox {
+                              padding: 15px;
+                              .title {
+                                  overflow: hidden;
+                                  // height: 1.2em;
+                                  -webkit-line-clamp: 1;
+                                  text-overflow: ellipsis;
+                                  white-space: normal;
+                                  word-wrap: break-word;
+                                  display: -webkit-box;
+                                  -webkit-box-orient: vertical;
+                              }
+                              .txt {
+                                  margin: 1vw 0;
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+    }
+  }
+  .insta-wrap {
+    margin-bottom: 60px;
+    height: auto;
+    h3 {
+      margin-bottom: 45px;
+    }
+    .insta-slide {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      ul {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          overflow-x: auto;
+          overflow-y: hidden;
+          -webkit-overflow-scrolling: touch;		/* 끝에서 바운스 되도록*/
+          scroll-snap-type: x mandatory;
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+          white-space: nowrap;
+          li {
+              flex-shrink: 0;
+              width: 9%;
+              min-width: 90px;
+              height: 9vw;
+              min-height: 90px;
+              margin: 0 0.5%;
+              margin-bottom: 20px;
+              background-color: #f4f4f4;
+              overflow: hidden;
+              a {
+                  display: inline-block;
+                  width: 100%;
+                  height: 100%;
+                  img {
+                      width: 100%;
+                  }
+              }
+          }
+      }
+    }
+  }
+  .footer-wrap {
+    height: 400px;
+    padding: 30px 0;
+    .footer-inner {
+      .footer-left {
+        width: 50%;
+        .footer-menu {
+          li {
+            margin-right: 20px;
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+        .footer-info {
+          li {
+            font-size: 13px;
+          }
+        }
+        .footer-banner {
+          li {
+            height: 40px;
+          }
+        }
+      }
+      .footer-middle {
+        width: 26%;
+        .phone {
+          .number {
+            font-size: 28px;
+          }
+        }
+      }
+      .footer-right {
+        width: 17%;
+        .option {
+          top: -238px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px){
+  .happy-talk-area {
+    width: 75%;
+    height: 65%;
+    .title {
+      height: 13%;
+    }
+    .contents {
+      height: 80%;
+      .center {
+        .center-talk {
+          height: auto;
+        }
+      }
+    }
+  }
+  .header-wrap {
+    .header-top {
+      display: none;
+    }
+    .header-middle {
+      height: 60px;
+      flex-wrap: wrap;
+      .search-area {
+        .m-menu {
+          display: block;
+          min-width: 140px;
+          li {
+            margin-left: 4vw;
+          }
+        }
+      }
+    }
+    .header-bottom {
+      .m-nav {
+        ul {
+          li {
+              a {
+                  padding: 0 10px;
+              }
+            }
+          }
+      }
+    }
+  }
+  .main-wrap {
+    .main-img-wrap {
+      li {
+        &:first-child {
+          img {
+            content: url('../img/m_main_bg_4.jpg');
+          }
+        }
+        @for $i from 1 to 5{
+          &:nth-child(#{$i+1}) {
+            img {
+              content: url('../img/m_main_bg_#{$i}.jpg');
+            }
+          }
+        }
+        &:last-child {
+          img {
+            content: url('../img/m_main_bg_1.jpg');
+          }
+        }
+      }
+    }
+  }
+  .banner-wrap {
+    justify-content: start;
+    flex-wrap: wrap;
+    height: 240px;
+    padding: 0;
+    .banner {
+      width: 100%;
+      height: 50%;
+    }
+  }
+  .time-deal-wrap {
+    margin-bottom: 55px;
+    h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    > p {
+      font-size: 24px;
+      letter-spacing: 1.5px;
+      span {
+        margin: 0 5px;
+      }
+    }
+    .banner-wrap {
+      .banner {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .best-new-wrap {
+    margin-bottom: 55px;
+    h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .product-wrap {
+      position: relative;
+      height: auto;
+      margin-top: 35px;
+      .product-list {
+        padding-bottom: 30px;
+        @include product-list(100%,46%);
+        > li {
+          margin-bottom: 50px;
+        }
+        .more {
+          width: 60%;
+        }
+      }
+    }
+  }
+  .keyword-wrap {
+    height: 200px;
+    margin-bottom: 60px;
+    h3 {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+    .keyword-list {
+      height: 140px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;		/* 끝에서 바운스 되도록*/
+      scroll-snap-type: x mandatory;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+      white-space: nowrap;
+      padding-bottom: 20px;
+      li {
+        flex-shrink: 0;
+        white-space: nowrap;
+        width: 80px;
+        height: auto;
+        margin: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        a {
+          width: 80px;
+          height: auto;
+          img {
+            width: 65px;
+            height: 65px;
+          }
+          h4 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .banner-wrap.event {
+    h3 {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+    .banner {
+      width: 100%;
+      p {
+        padding: 0 30px;
+        font-size: 3vw;
+        &:first-child {
+          margin-top: 5%;
+        }
+      }
+    }
+  }
+  .online-wrap {
+    height: 95vw;
+    min-height: 480px;
+    padding: 10vw 0 13vw;
+    margin-bottom: 60px;
+    .online-inner {
+      h3 {
+        font-size: 28px;
+        margin-bottom: 40px;
+      }
+      .online-list {
+        li {
+          width: 48%;
+          &:last-child {
+            display: none;
+          }
+          a {
+            h4 {
+              font-size: 3vw;
+            }
+            p {
+              font-size: 2.4vw;
+            }
+          }
+        }
+      }
+    }
+    .btn-wrap {
+      bottom: 20px;
+    }
+  }
+  .popular-wrap {
+    margin-bottom: 60px;
+    h3 {
+      font-size: 28px;
+    }
+    .product-wrap {
+      margin-top: 40px;
+      .btn-wrap {
+        height: 120px;
+        margin-bottom: 30px;
+        li {
+          width: calc(100% / 3);
+          font-size: 3vw;
+          @for $i from 1 to 4 {
+            &:nth-child(#{$i}){
+              border-bottom: 1px solid #dcdcdc;
+            }
+          }
+          &:nth-child(4){
+            border-left: none;
+          }
+        }
+      }
+      .product-list {
+        margin-top: 45px;
+        @include product-list(100%, 46%);
+        > li {
+            a {
+                width: 100%;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-left: 0;
+                }
+            }
+
+        }
+        .more {
+          width: 60%;
+        }
+      }
+    }
+  }
+  .comment-wrap {
+    margin-bottom: 40px;
+    h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .img-wrap {
+        max-width: 100%;
+        height: auto;
+        background: url('../img/m_new_product_bg.jpg') no-repeat center / 100%;
+        h4 {
+            font-size: 3.6vw;
+            margin-top: 5px;
+        }
+        .apply {
+            margin-top: 15px;
+            padding: 5px 25px;
+            font-size: 16px;
+        }
+    }
+  }
+  .tv-wrap {
+    margin-bottom: 60px;
+    h3 {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }    
+    .inner {
+      flex-wrap: wrap;
+      height: 90vw;
+      .tv-left {
+        width: 100%;
+        height: 68%;
+      }
+      .tv-right {
+        width: 100%;
+        height: 28%;
+        flex-direction: row;
+        > div {
+          width: 32%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .review-wrap {
+    margin-bottom: 60px;
+    h3 {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+    .review-bottom {
+      .review-slide {
+        button {
+          width: 5%;
+        }
+        .slide-wrap {
+          width: 90%;
+          ul {
+            width: 700%;
+          }
+        }
+      }
+      .more {
+        width: 60%;
+      }
+    }
+  }
+  .footer-wrap {
+    height: auto;
+    .footer-inner {
+      flex-wrap: wrap;
+      .footer-left {
+        .footer-info {
+          li {
+            height: auto;
+            margin-bottom: 5px;
+          }
+        }
+        .footer-banner {
+          flex-wrap: wrap;
+          li {
+            float: none;
+            height: 40px;
+            margin-right: 10px;
+          }
+        }
+      }
+      .footer-middle {
+        width: 46%;
+        .phone {
+          .number {
+            font-size: 20px;
+          }
+        }
+        .time {
+          p {
+              width: 80%;
+          }
+        }
+      }
+      .footer-right {
+        margin-top: 20px;
+        width: 40%;
+        .option {
+          top: -238px;
         }
       }
     }
