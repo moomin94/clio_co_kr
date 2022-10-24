@@ -460,6 +460,7 @@
     .header-middle {
       height: 60px;
       flex-wrap: wrap;
+      padding: 0 15px;
       .search-area {
         .m-menu {
           display: block;
@@ -508,11 +509,18 @@
   .banner-wrap {
     justify-content: start;
     flex-wrap: wrap;
-    height: 240px;
+    margin: 10% auto;
+    height: 40vw;
     padding: 0;
     .banner {
       width: 100%;
-      height: 50%;
+      height: auto;
+      &.left {
+        background: url('../img/banner_img_1.jpg') no-repeat  center/ cover;
+        }
+        &.right {
+            background: url('../img/banner_img_2.jpg') no-repeat  center/ cover;
+        }
     }
   }
   .time-deal-wrap {
@@ -550,6 +558,14 @@
         @include product-list(100%,46%);
         > li {
           margin-bottom: 50px;
+          a {
+            &::before {
+              top: 8px;
+              left: 8px;
+              width: 50px;
+              height: 50px;
+            }
+          }
         }
         .more {
           width: 60%;
@@ -605,6 +621,7 @@
     }
     .banner {
       width: 100%;
+      margin-bottom: 0;
       p {
         padding: 0 30px;
         font-size: 3vw;
@@ -657,7 +674,7 @@
         margin-bottom: 30px;
         li {
           width: calc(100% / 3);
-          font-size: 3vw;
+          font-size: 16px;
           @for $i from 1 to 4 {
             &:nth-child(#{$i}){
               border-bottom: 1px solid #dcdcdc;
@@ -679,6 +696,12 @@
                     width: 100%;
                     height: auto;
                     margin-left: 0;
+                }
+                &::before {
+                  top: 8px;
+                  left: 8px;
+                  width: 50px;
+                  height: 50px;
                 }
             }
 

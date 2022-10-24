@@ -442,6 +442,7 @@
 }
 .header-wrap .header-bottom nav .main-nav > li > .sub-nav-area .sub-list li .title {
   height: 40px;
+  overflow: hidden;
 }
 .header-wrap .header-bottom nav .main-nav > li > .sub-nav-area .sub-list li .cost {
   font-weight: 600;
@@ -713,6 +714,7 @@
 }
 .best-new-wrap .product-wrap .product-list li .title {
   height: 40px;
+  overflow: hidden;
 }
 .best-new-wrap .product-wrap .product-list li .cost {
   font-weight: 600;
@@ -1028,6 +1030,7 @@
 }
 .popular-wrap .product-wrap .product-list li .title {
   height: 40px;
+  overflow: hidden;
 }
 .popular-wrap .product-wrap .product-list li .cost {
   font-weight: 600;

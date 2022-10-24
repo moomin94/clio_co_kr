@@ -81,16 +81,6 @@ document.addEventListener("DOMContentLoaded", function(){
     
     // 3.5초마다 자동으로 오른쪽으로 이동
     let autoSlide = setInterval(moveSlide, 3500);
-    
-    // 이미지에 마우스 올렸을 때는 자동으로 이동하지 않기
-    slideBox.addEventListener('mouseover', function(){
-        clearInterval(autoSlide);
-    });
-
-    // 이미지에서 마우스 내렸을 때 자동으로 이동하기
-    slideBox.addEventListener('mouseout', function(){
-        autoSlide = setInterval(moveSlide, 3500);
-    });
 
     // next 버튼 클릭시 오른쪽으로 이동
     nextBtn.addEventListener("click", function(){
