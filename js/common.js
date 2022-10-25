@@ -1,6 +1,18 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function(){
+    // Login modal
+    const loginBtn = document.querySelector('.util-area .login a');
+    const loginModal = document.querySelector('.login-modal-wrap');
+    const modalCloseBtn = loginModal.querySelector('.close');
+    loginBtn.addEventListener('click',function(e){
+        e.preventDefault();
+        loginModal.classList.add('on');
+    });
+    modalCloseBtn.addEventListener('click', function(){
+        loginModal.classList.remove('on');
+    })
+
     // Happy Talk btn click event
     const happyTalkBtn = document.querySelector('.happy-talk');
     const happyTalkArea = document.querySelector('.happy-talk-area');
