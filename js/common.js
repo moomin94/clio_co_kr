@@ -12,6 +12,13 @@ document.addEventListener("DOMContentLoaded", function(){
         happyTalkArea.classList.remove('on');
     });
 
+    // Top btn click event
+    const topBtn = document.querySelector('.top-btn');
+    topBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        window.scrollTo({top:0, behavior:"smooth"});
+    });
+
     // Main-nav → Sub-nav show/hidden
     const areaBtn = document.querySelectorAll('.area > li > a');
     const subNavArea = document.querySelectorAll('.sub-nav-area');
@@ -41,13 +48,6 @@ document.addEventListener("DOMContentLoaded", function(){
         }else{
             navArea.classList.remove('on');
         };
-        // Top btn click event
-        const topBtn = document.querySelector('.top-btn');
-        topBtn.addEventListener('click', function(e){
-            e.preventDefault();
-            window.scrollTo({top:0, behavior:"smooth"});
-        });
-
     });
 
     // Main img area
