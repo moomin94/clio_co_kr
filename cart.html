@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="클럽클리오">
+  <meta property="og:description" content="클리오, 페리페라, 구달, 더마토리, 힐링버드 공식 온라인몰">
+  <meta property="og:image" content="http://img.clubclio.co.kr/common/images/default/pc_logo.jpg">
+  <title>ClubClio | 장바구니</title>
+  <link rel="shortcut icon" href="./img/favicon1.ico">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="./js/cart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="login-modal-wrap">
+      <div class="login-modal">
+        <div class="login-box">
+          <div class="login-wrap">
+            <h3>회원 로그인</h3>
+            <form class="login-form">
+              <label for="user-id">아이디</label>
+              <input type="text" id="user-id" name="user-id">
+              <label for="user-pw">비밀번호</label>
+              <input type="password" id="user-pw" name="user-pw" placeholder="영문/숫자/특수문자 조합하여 6~16자리">
+              <div class="id-pw">
+                <div class="check-box">
+                  <input type="checkbox" id="id-save" name="id-save">
+                  <label for="id-save">아이디 저장</label>
+                </div>
+                <a href="#">아이디/비밀번호찾기</a>
+              </div>
+              <button type="submit" class="btn">로그인</button>
+            </form>
+            <button class="sign-up dark btn">회원가입</button>
+            <div class="sns-login">
+              <button class="naver login">
+                <img src="./img/login_naver.png" alt="login_naver">
+                <span>네이버로그인</span>
+              </button>
+              <button class="kakao login">
+                <img src="./img/login_kakao.png" alt="login_kakao">
+                <span>카카오톡로그인</span>
+              </button>
+            </div>
+          </div>
+          <div class="nonMember-wrap">
+            <h3>비회원주문</h3>
+            <form class="nonMember-form">
+              <label for="nM-name">주문자명</label>
+              <input type="text" id="nM-name" name="nM-name" placeholder="주문자명을 입력하세요">
+              <label for="nM-pw">비밀번호</label>
+              <input type="password" id="nM-pw" name="nM-pw" placeholder="비밀번호를 입력하세요">
+              <label for="nM-number">연락처</label>
+              <div class="number-box">
+                <select name="nM-number" id="nM-number">
+                  <option value="010" selected>010</option>
+                  <option value="011">011</option>
+                  <option value="016">016</option>
+                  <option value="017">017</option>
+                  <option value="018">018</option>
+                  <option value="019">019</option>
+                </select>
+                <input type="text" name="nM-number">
+                <input type="text" name="nM-number">
+              </div>
+              <button type="submit" class="order-check btn">주문조회</button>
+            </form>
+          </div>
+        </div>
+        <button class="close btn"><img src="./img/login_close.png" alt="login_close"></button>
+      </div>
+    </div>
+
+    <button class="happy-talk"></button>
+    <div class="happy-talk-area">
+      <div class="title">
+        <div class="txt">
+          <h5>고객을 행복하게,해피톡</h5>
+          <p>문의사항이 있으신가요?</p>
+        </div>
+        <button class="close"><i class="fa-solid fa-right-to-bracket"></i></button>
+      </div>
+      <div class="contents">
+        <div class="center">
+          <div class="center-profile">
+            <img class="center-img" src="./img/profile.png" alt="center profile">
+            <span class="center-name">(주)클리오</span>
+          </div>
+          <div class="center-talk">
+            <p>안녕하세요. (주)클리오 입니다.<br>
+              상담가능시간은 평일 오전 09:00~오후 17:00 입니다.<br>
+              문의주신 순서에 따라 바로 답변 드리겠습니다.<br>
+              행복한 시간되세요:)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>POWERED BY <strong>Happytalk</strong></p>
+      </div>
+    </div>
+    
+    <button class="top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+    
+    <header class="header-wrap">
+      <div class="header-top">
+        <ul class="util-area">
+          <li class="login"><a href="#">로그인</a></li>
+          <li class="sign-up"><a href="signUp.html">회원가입</a></li>
+          <li><a href="#">CS</a></li>
+          <li><a href="#">공지사항</a></li>
+          <li class="cart"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        </ul>
+      </div>
+      <div class="header-middle">
+        <h1><a href="index.html"><img src="./img/logo.png" alt="logo"></a></h1>
+        <div class="search-area">
+          <form class="search-form">
+            <input type="text" class="search-input" placeholder="두께가 느껴지지않는 #얇은커버 #요즘파데">
+            <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <ul class="search-tag">
+            <li><a href="#">#클리오</a></li>
+            <li><a href="#">#신상파데</a></li>
+            <li><a href="#">#구매하면</a></li>
+            <li><a href="#">#스파츌라까지♥</a></li>
+          </ul>
+          <ul class="m-menu">
+            <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+            <li class="cart"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <nav>
+          <ul class="main-nav all">
+            <li>
+              <a href="#"><i class="fa-solid fa-bars menu-btn"></i>전체 카테고리</a>
+              <ul class="sub-nav all">
+                <li><a href="#">오늘의특가</a></li>
+                <li><a href="#">카테고리별</a></li>
+                <li><a href="#">피부고민별</a></li>
+                <li><a href="#">브랜드별</a></li>
+                <li><a href="#">이너뷰티</a></li>
+                <li><a href="#">ONLY ONLINE</a></li>
+                <li><a href="#">선물하기</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="main-nav new">
+            <li>
+              <a href="#">오특</a>
+            </li>
+            <li>
+              <a href="#">신상</a>
+            </li>
+            <li>
+              <a href="#">베스트</a>
+            </li>
+          </ul>
+          <ul class="main-nav area">
+            <li>
+              <a href="#">CLIO</a>
+              <div class="sub-nav-area clio">
+                <ul class="sub-nav">
+                  <h2>클리오</h2>
+                  <li><a href="#">전체보기</a></li>
+                  <li><a href="#">베이스/선</a></li>
+                  <li><a href="#">립</a></li>
+                  <li><a href="#">아이</a></li>
+                  <li><a href="#">치크&하이라이터</a></li>
+                  <li><a href="#">클렌징</a></li>
+                  <li><a href="#">네일&ACC</a></li>
+                </ul>
+                <ul class="sub-list">
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_clio_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
+                      <p class="info">#런칭한달만에 #베스트 #퍼프증정까지!</p>
+                      <p class="title">킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 734<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                      <button class="btn best">BEST</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_clio_2.jpg" alt="킬커버 파운웨어 파운데이션">
+                      <p class="info">#찰떡궁합 #스파츌라 #한정수량증정!</p>
+                      <p class="title">킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
+                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+                      <p class="review">리뷰 26<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_clio_3.jpg" alt="데일리 뽀글이 파우치">
+                      <p class="info">#수납력갑 #도톰폭신 #감성컬러</p>
+                      <p class="title">[NEW] 데일리 뽀글이 파우치</p>
+                      <p class="cost"><span class="sale">20%</span> 9,600원 <span class="original">12,000</span></p>
+                      <p class="review">리뷰 6<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">peripera</a>
+              <div class="sub-nav-area peripera">
+                <ul class="sub-nav">
+                  <h2>페리페라</h2>
+                  <li><a href="#">전체보기</a></li>
+                  <li><a href="#">베이스/선</a></li>
+                  <li><a href="#">립</a></li>
+                  <li><a href="#">아이</a></li>
+                  <li><a href="#">치크&하이라이터</a></li>
+                  <li><a href="#">클렌징</a></li>
+                  <li><a href="#">네일</a></li>
+                </ul>
+                <ul class="sub-list">
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_peri_1.jpg" alt="아이팔레트">
+                      <p class="info">#빈티지니팅 #컬러무드 #신상컬러출시!</p>
+                      <p class="title">[NEW 컬러] 심플레인 아이 팔레트 [증정] 워터풀네일</p>
+                      <p class="cost"><span class="sale">30%</span> 16,800원 <span class="original">24,000</span></p>
+                      <p class="review">리뷰 255<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                      <button class="btn best">BEST</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_peri_2.jpg" alt="워터 블러 틴트">
+                      <p class="info">#6,7,8호 #가을무드 #신상컬러출시!</p>
+                      <p class="title">[NEW 컬러/1+1] 심플레인 워터 블러틴트 [증정] 워</p>
+                      <p class="cost"><span class="sale">35%</span> 15,600원 <span class="original">24,000</span></p>
+                      <p class="review">리뷰 429<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_peri_3.jpg" alt="래쉬앰플">
+                      <p class="info">#튼튼래쉬에 #영양한겹 #저자극케어</p>
+                      <p class="title">심플레인 래쉬앰플 (속눈썹 영양제)</p>
+                      <p class="cost"><span class="sale">32%</span> 9,500원 <span class="original">14,000</span></p>
+                      <p class="review">리뷰 213<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">goodal</a>
+              <div class="sub-nav-area goodal">
+                <ul class="sub-nav">
+                  <h2>구달</h2>
+                  <li><a href="#">전체보기</a></li>
+                  <li><a href="#">토너/미스트</a></li>
+                  <li><a href="#">세럼/에센스</a></li>
+                  <li><a href="#">로션/크림</a></li>
+                  <li><a href="#">패드/마스크</a></li>
+                  <li><a href="#">클렌징/선케어</a></li>
+                  <li><a href="#">미용소품</a></li>
+                </ul>
+                <ul class="sub-list">
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_goodal_1.jpg" alt="잡티케어세럼">
+                      <p class="info">#베스트셀러의 #업그레이드 #대용량!</p>
+                      <p class="title">청귤 비타C 잡티케어 세럼 50ml [증정] 세럼마스크(AD</p>
+                      <p class="cost"><span class="sale">29%</span> 29,900원 <span class="original">42,000</span></p>
+                      <p class="review">리뷰 32<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_goodal_2.jpg" alt="세럼미스트">
+                      <p class="info">#빛타C미스트 #뿌리는청귤세럼 #비건미스</p>
+                      <p class="title">[NEW] 청귤 비타C 세럼 미스트 100ml</p>
+                      <p class="cost"><span class="sale">20%</span> 16,000원 <span class="original">20,000</span></p>
+                      <p class="review">리뷰 3<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_goodal_3.jpg" alt="진정마스크">
+                      <p class="info">#어성초가득담은 #시트한장으로 #진정케어</p>
+                      <p class="title">[1+1] 맑은 어성초 진정 마스크 (22AD)</p>
+                      <p class="cost"><span class="sale">50%</span> 3,000원 <span class="original">6,000</span></p>
+                      <p class="review">리뷰 121<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Dermatory</a>
+              <div class="sub-nav-area dermatory">
+                <ul class="sub-nav">
+                  <h2>더마토리</h2>
+                  <li><a href="#">전체보기</a></li>
+                  <li><a href="#">프로 더마</a></li>
+                  <li><a href="#">프로 트러블</a></li>
+                  <li><a href="#">보습 진정</a></li>
+                  <li><a href="#">시카 진정</a></li>
+                  <li><a href="#">마스크/팩</a></li>
+                  <li><a href="#">저자극 클렌저</a></li>
+                </ul>
+                <ul class="sub-list">
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_dermatory_1.jpg" alt="물광앰플">
+                      <p class="info">#데일리 #수분충전 #대용량출시</p>
+                      <p class="title">프로 히알샷 물광앰플 45ml [증정] 물광앰플 10g</p>
+                      <p class="cost"><span class="sale">30%</span> 24,500원 <span class="original">35,000</span></p>
+                      <p class="review">리뷰 949<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_dermatory_2.jpg" alt="수분픽업마스크">
+                      <p class="info">#뽑아쓰는 #쿨링&수분케어 #마스크팩</p>
+                      <p class="title">프로 히알샷 수분 픽업 마스크 [증정] 물광앰플 10g</p>
+                      <p class="cost"><span class="sale">45%</span> 13,200원 <span class="original">24,000</span></p>
+                      <p class="review">리뷰 313<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                      <button class="btn best">BEST</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_dermatory_3.jpg" alt="클렌징워터패드">
+                      <p class="info">#모공꼼꼼세정 #약산성 #클렌징패드</p>
+                      <p class="title">프로 트러블 모공 클렌징 워터 패드 100매 기획</p>
+                      <p class="cost"><span class="sale">30%</span> 15,400원 <span class="original">22,000</span></p>
+                      <p class="review">리뷰 49<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">HealingBird</a>
+              <div class="sub-nav-area healing">
+                <ul class="sub-nav">
+                  <h2>힐링버드</h2>
+                  <li><a href="#">전체보기</a></li>
+                  <li><a href="#">헤어</a></li>
+                  <li><a href="#">바디</a></li>
+                  <li><a href="#">기프트</a></li>
+                </ul>
+                <ul class="sub-list">
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_healing_1.jpg" alt="퍼스트 헤어팩">
+                      <p class="info">#집에서도 #간편하게 #살롱케어!</p>
+                      <p class="title">[NEW] 비포 샴푸 퍼스트 헤어팩 330ml</p>
+                      <p class="cost"><span class="sale">35%</span> 19,300원 <span class="original">29,800</span></p>
+                      <p class="review">리뷰 33<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_healing_2.jpg" alt="크림 트리트먼트">
+                      <p class="info">#손상모발용 #노워시 #크림트리트먼트</p>
+                      <p class="title">울트라 프로틴 노워시 리커버리 크림 트리트먼트 130</p>
+                      <p class="cost"><span class="sale">30%</span> 15,400원 <span class="original">22,000</span></p>
+                      <p class="review">리뷰 48<span class="dawn">새벽배송</span></p>
+                      <button class="btn best">BEST</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_healing_3.jpg" alt="헤어 트리트먼트">
+                      <p class="info">#대용량750ml #집에서 #클리닉한듯!</p>
+                      <p class="title">울트라 프로틴 헤어 트리트먼트 750ml</p>
+                      <p class="cost"><span class="sale">30%</span> 16,800원 <span class="original">24,000</span></p>
+                      <p class="review">리뷰 357<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">TYPE No.</a>
+              <div class="sub-nav-area type">
+                <ul class="sub-nav">
+                  <h2>타입넘버</h2>
+                  <li><a href="#">전체보기</a></li>
+                  <li><a href="#">원더바이브</a></li>
+                  <li><a href="#">윈드스테이</a></li>
+                  <li><a href="#">소울워터</a></li>
+                </ul>
+                <ul class="sub-list">
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_type_1.jpg" alt="핸드케어SET">
+                      <p class="info">#코끝을스치는 #다채로운향기 #핸드케어SET</p>
+                      <p class="title">핸드케어 세트 [핸드크림*2ea+핸드겔*1ea 구성] [</p>
+                      <p class="cost"><span class="sale">10%</span> 25,200원 <span class="original">28,000</span></p>
+                      <p class="review">리뷰 0<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_type_2.jpg" alt="핸드크림">
+                      <p class="info">#선물추천 #기프트박스 #한정수량</p>
+                      <p class="title">TYPE No. 핸드크림 (3종 중 택1) [한정수량 증정] 선</p>
+                      <p class="cost"><span class="sale">10%</span> 14,400원 <span class="original">16,000</span></p>
+                      <p class="review">리뷰 5<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_type_3.jpg" alt="핸드워시">
+                      <p class="info">#일상을채우는 #감각적인 #향기라인업</p>
+                      <p class="title">TYPE No. 핸드워시 350ml (3종 중 택1)</p>
+                      <p class="cost"><span class="sale">10%</span> 18,900원 <span class="original">21,000</span></p>
+                      <p class="review">리뷰 3<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">A.Black</a>
+              <div class="sub-nav-area ablack">
+                <ul class="sub-nav">
+                  <h2>에이블랙</h2>
+                  <li><a href="#">전체보기</a></li>
+                  <li><a href="#">아이</a></li>
+                  <li><a href="#">립</a></li>
+                </ul>
+                <ul class="sub-list">
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_ablack_1.jpg" alt="립트리트먼트 컬러밤">
+                      <p class="info">#생기끌올 #고발색고보습 #비건틴트밤</p>
+                      <p class="title">비건 립트리트먼트 컬러밤 [증정] 기프트박스</p>
+                      <p class="cost"><span class="sale">55%</span> 9,900원 <span class="original">22,000</span></p>
+                      <p class="review">리뷰 51<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_ablack_2.jpg" alt="컬러밤 미니 3종 기획세트">
+                      <p class="info">#고발색고보습 #미니기획 #한정컬러포함!</p>
+                      <p class="title">비건 립트리트먼트 컬러밤 미니 3종 기획세트</p>
+                      <p class="cost"><span class="sale">55%</span> 15,900원 <span class="original">35,000</span></p>
+                      <p class="review">리뷰 9<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_ablack_3.jpg" alt="멀티 팔레트">
+                      <p class="info">#올댓가을 #팔레트하나로 #세상그윽</p>
+                      <p class="title">[NEW 9,10호 출시!] 글램체인지 멀티 팔레트</p>
+                      <p class="cost"><span class="sale">34%</span> 19,900원 <span class="original">30,000</span></p>
+                      <p class="review">리뷰 1,810<span class="dawn">새벽배송</span></p>
+                      <button class="btn best">BEST</button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">TWINKLE POP</a>
+              <div class="sub-nav-area twinkle">
+                <ul class="sub-nav">
+                  <h2>트윙클팝</h2>
+                  <li><a href="#">전체보기</a></li>
+                  <li><a href="#">아이</a></li>
+                </ul>
+                <ul class="sub-list">
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_twinkle_1.jpg" alt="펄그라데이션 올오버 팔레트">
+                      <p class="info">#제형&컬러 #고민없이 #올오버팔레트</p>
+                      <p class="title">펄그라데이션 올오버 팔레트</p>
+                      <p class="cost"><span class="sale">38%</span> 9,900원 <span class="original">15,900</span></p>
+                      <p class="review">리뷰 106<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_twinkle_2.jpg" alt="페이스 플래쉬 팔레트">
+                      <p class="info">#맑음영롱 #분위기조장 #입체페이스완성</p>
+                      <p class="title">페이스 플래쉬 팔레트</p>
+                      <p class="cost"><span class="sale">39%</span> 7,900원 <span class="original">12,900</span></p>
+                      <p class="review">리뷰 51<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_twinkle_3.jpg" alt="글리터링 아이스틱">
+                      <p class="info">#갓성비 #애교살스틱 #동안눈매연출</p>
+                      <p class="title">글리터링 아이스틱</p>
+                      <p class="cost"><span class="sale">20%</span> 5,520원 <span class="original">6,900</span></p>
+                      <p class="review">리뷰 1,615<span class="dawn">새벽배송</span></p>
+                      <button class="btn best">BEST</button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">ALPHA.B</a>
+              <div class="sub-nav-area alphab">
+                <ul class="sub-nav">
+                  <h2>알파비</h2>
+                  <li><a href="#">전체보기</a></li>
+                  <li><a href="#">토너/미스트</a></li>
+                  <li><a href="#">앰플/크림</a></li>
+                  <li><a href="#">클렌징/선케어</a></li>
+                </ul>
+                <ul class="sub-list">
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_alphab_1.jpg" alt="엑소 콜라겐 앰플">
+                      <p class="info">#앰플하나로 #영양 #탄력케어!</p>
+                      <p class="title">[런칭특가] 타임리턴 엑소 콜라겐 앰플</p>
+                      <p class="cost"><span class="sale">40%</span> 26,900원 <span class="original">45,000</span></p>
+                      <p class="review">리뷰 0<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_alphab_2.jpg" alt="골드 콜라겐 밤">
+                      <p class="info">#24K골드 #어린콜라겐 #중력방패스틱</p>
+                      <p class="title">타임 리턴 골드 콜라겐 밤</p>
+                      <p class="cost"><span class="sale">45%</span> 22,900원 <span class="original">42,000</span></p>
+                      <p class="review">리뷰 57<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/sub_list_alphab_3.jpg" alt="유브이 밤">
+                      <p class="info">#주름질틈없이 #햇빛차단 #태양방패스틱</p>
+                      <p class="title">타임 쉴드 유브이 밤</p>
+                      <p class="cost"><span class="sale">46%</span> 21,000원 <span class="original">39,000</span></p>
+                      <p class="review">리뷰 82<span class="dawn">새벽배송</span></p>
+                      <button class="btn new">NEW</button>
+                      <button class="btn best">BEST</button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="main-nav event">
+            <li>
+              <a href="#">이벤트</a>
+              <ul class="sub-nav event">
+                <li><a href="#">진행중인 이벤트</a></li>
+                <li><a href="#">BEAUTY TESTER</a></li>
+                <li><a href="#">공식몰 멤버십 혜택</a></li>
+                <li><a href="#">신규회원 이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">선물하기</a>
+            </li>
+          </ul>
+          <ul class="main-nav review">
+            <li>
+              <a href="#">리뷰</a>
+            </li>
+            <li>
+              <a href="#">멤버십 혜택</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="m-nav">
+          <ul>
+            <li class="on"><a href="#">홈</a></li>
+            <li><a href="#">심플레인 FW</a></li>
+            <li><a href="#">베스트</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">웰컴혜택</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="contents-wrap">
+      <h2>장바구니</h2>
+      <div class="cart-wrap">
+        <div class="cart-btn">
+          <button class="on">일반배송(2)</button>
+          <button class="dawn"><em>새벽배송</em>(0)</button>
+        </div>
+        <div class="cart-box on">
+          <p class="title">일반배송</p>
+          <ul class="select-btn">
+            <li><a href="#">전체선택</a></li>
+            <li><a href="#">선택해제</a></li>
+            <li><a href="#">선택삭제</a></li>
+            <li><a href="#" class="dawn">새벽배송이동</a></li>
+          </ul>
+          <div class="product-list">
+            <ul>
+              <li>
+                <div class="left">
+                  <input type="checkbox">
+                  <img src="./img/cart-product-img_1.jpg" alt="cart-product">
+                  <div class="product-txt">
+                    <p class="product-name">킬커버 파운웨어 파운데이션 (38g/단품) [한정증정] 메이크업 스파츌라</p>
+                    <p class="product-option">2호 란제리</p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="number-select">
+                    <button class="minus">ㅡ</button>
+                    <span>1</span>
+                    <button class="plus">+</button>
+                  </div>
+                  <div class="product-cost">
+                    <span class="sale">34,000</span>
+                    <h5 class="cost">23,800</h5>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="left">
+                  <input type="checkbox">
+                  <img src="./img/cart-product-img_2.jpg" alt="cart-product">
+                  <div class="product-txt">
+                    <p class="product-name">[1+1] 잉크 더 에어리 벨벳 #물복딱복</p>
+                    <p class="product-option">021 물복피치</p>
+                    <p class="product-option">022 확신의피치상</p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="number-select">
+                    <button class="minus">ㅡ</button>
+                    <span>1</span>
+                    <button class="plus">+</button>
+                  </div>
+                  <div class="product-cost">
+                    <span class="sale">18,000</span>
+                    <h5 class="cost">13,500</h5>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="cost-wrap">
+              <div class="cost-total">
+                <p>총상품금액합계</p>
+                <h4>52,000</h4>
+              </div>
+              <div class="cost-sale">
+                <p>할인금액</p>
+                <h4>14,700</h4>
+              </div>
+              <div class="cost-del">
+                <p>배송비</p>
+                <h4>0</h4>
+              </div>
+              <div class="cost-pay">
+                <p>예상결제금액</p>
+                <h4 class="on">37,300</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-box dawn">
+          <p class="title"><em>새벽배송</em></p>
+          <ul class="select-btn">
+            <li><a href="#">전체선택</a></li>
+            <li><a href="#">선택해제</a></li>
+            <li><a href="#">선택삭제</a></li>
+            <li><a href="#">일반배송이동</a></li>
+          </ul>
+          <div class="product-list">
+            <ul>
+              <p>장바구니에 담긴 상품이 없습니다.</p>
+            </ul>
+            <div class="cost-wrap">
+              <div class="cost-total">
+                <p>총상품금액합계</p>
+                <h4>0</h4>
+              </div>
+              <div class="cost-sale">
+                <p>할인금액</p>
+                <h4>0</h4>
+              </div>
+              <div class="cost-del">
+                <p>배송비</p>
+                <h4>0</h4>
+              </div>
+              <div class="cost-pay">
+                <p>예상결제금액</p>
+                <h4 class="on">0</h4>
+              </div>
+            </div>
+            <div class="alert-box">
+              <p>*새벽배송 3만원 이상 구매 시, 배송비 무료</p>
+              <p>*서울,수도권 지역 외 지역은 새벽배송 이용이 불가합니다.</p>
+              <p>*새벽배송은 네이버페이 구매가 불가합니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order-wrap">
+        <div class="order-btn-box">
+          <button class="gift">선물하기</button>
+          <button class="order-select">선택상품주문</button>
+          <button class="order-all">전체상품주문</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-wrap">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <ul class="footer-menu">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">매장검색</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">이메일무단수집거부</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+          <ul class="footer-info">
+            <li>(주)클리오</li>
+            <li>대표:홍길동 | 개인정보담당자: 김민수 팀장</li>
+            <li>본사:서울시 성동구 왕십리로 66 (주)클리오(분당선 서울숲역 2번 출구)</li>
+            <li>경기도 안성시 안성면 안성길 11-11 (주)클리오 물류센터</li>
+            <li>사업자등록번호:111-22-33333 사업자정보확인</li>
+            <li>통신판매업신고번호:제 2000-서울-00123호</li>
+            <li>COPYRIGHT (C)2017 clubclio.co.ltd.ALL RIGHTS RESERVED</li>
+          </ul>
+          <ul class="footer-banner">
+            <li><a href="#"><img src="./img/winner_clubclio.png" alt="footer-banner"></a></li>
+            <li><a href="#"><img src="./img/AA2020_winner.png" alt="footer-banner"></a></li>
+            <li><a href="#"><img src="./img/google.jpg" alt="footer-banner"></a></li>
+            <li><a href="#"><img src="./img/ios.jpg" alt="footer-banner"></a></li>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <div class="phone">
+            <p class="title">고객센터</p>
+            <p class="number">080-080-0000</p>
+          </div>
+          <div class="time">
+            <p><span>평일</span><span>09:30~17:00</span></p>
+            <p><span>점심시간</span><span>12:30~13:30</span></p>
+            <p>주말/공휴일 휴무</p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <h4 class="title">패밀리 브랜드</h4>
+          <ul class="option">
+            <li><a href="#">(주)클리오</a></li>
+            <li><a href="#">클리오</a></li>
+            <li><a href="#">페리페라</a></li>
+            <li><a href="#">구달</a></li>
+            <li><a href="#">힐링버드</a></li>
+            <li><a href="#">더마토리</a></li>
+            <li><a href="#">트루알엑스</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

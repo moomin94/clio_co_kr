@@ -352,8 +352,8 @@
   height: 50px;
   background: url("../img/join_point.png") no-repeat;
 }
-.header-wrap .header-top .util-area li.cart::after {
-  content: "0";
+.header-wrap .header-top .util-area li.cart a::after {
+  content: "2";
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
@@ -460,8 +460,8 @@
 .header-wrap .header-middle .search-area .m-menu li.cart {
   margin-right: 5px;
 }
-.header-wrap .header-middle .search-area .m-menu li.cart::after {
-  content: "0";
+.header-wrap .header-middle .search-area .m-menu li.cart a::after {
+  content: "2";
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;

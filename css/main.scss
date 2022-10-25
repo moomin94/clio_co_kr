@@ -353,20 +353,22 @@
                     height: 50px;
                     background: url('../img/join_point.png') no-repeat;
                 }
-                &.cart::after {
-                    content: '0';
-                    font-size: 14px;
-                    font-weight: 600;
-                    color: #ffffff;
-                    text-align: center;
-                    position: absolute;
-                    top: 0;
-                    left: 10px;
-                    width: 18px;
-                    height: 18px;
-                    border-radius: 50%;
-                    background-color: $point-color;
-                    cursor: pointer;
+                &.cart {
+                    a::after {
+                        content: '2';
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #ffffff;
+                        text-align: center;
+                        position: absolute;
+                        top: 0;
+                        left: 10px;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        background-color: $point-color;
+                        cursor: pointer;
+                    }
                 }
                 a {
                     font-size: 14px;
@@ -462,8 +464,9 @@
                     &.cart {
                         margin-right: 5px;
                     }
-                    &.cart::after {
-                        content: '0';
+                    &.cart{
+                        a::after {
+                        content: '2';
                         font-size: 14px;
                         font-weight: 600;
                         color: #ffffff;
@@ -476,6 +479,7 @@
                         border-radius: 50%;
                         background-color: $point-color;
                         cursor: pointer;
+                        }
                     }
                 }
             }
