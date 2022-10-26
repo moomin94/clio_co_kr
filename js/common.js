@@ -1,6 +1,38 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function(){
+    // Mobile gnb toggle
+    const mGnbBtn = document.querySelector('.m-menu .gnb');
+    const mGnbWrap = document.querySelector('.m-gnb-wrap');
+    const mGnbCon = document.querySelector('.m-gnb-con');
+    const categoryBtn = document.querySelectorAll('.category-btn');
+    const categoryWrap = document.querySelectorAll('.category-list');
+    const mGnbCloseBtn = document.querySelector('.m-gnb-con .close');
+    mGnbBtn.addEventListener('click', function(){
+        mGnbWrap.classList.add('on');
+        mGnbCon.classList.add('on');
+        document.body.style.overflow = 'hidden';
+    });
+
+    categoryBtn.forEach(function(item, index){
+        item.addEventListener('click', function(){
+            categoryBtn.forEach(function(i){
+                i.classList.remove('on');
+            });
+            categoryWrap.forEach(function(i){
+                i.classList.remove('on');
+            });
+            item.classList.add('on');
+            categoryWrap[index].classList.add('on');
+        });
+    });
+
+    mGnbCloseBtn.addEventListener('click', function(){
+        mGnbWrap.classList.remove('on');
+        mGnbCon.classList.remove('on');
+        document.body.style.overflow = 'auto';
+    });
+
     // Login modal
     const mLoginBtn = document.querySelector('.m-menu .login');
     const mLoginModal = document.querySelector('.m-login-modal-wrap');
