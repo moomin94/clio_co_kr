@@ -19,6 +19,134 @@
   <script src="./js/signUp.js"></script>
 </head>
 <body>
+  <div class="login-modal-wrap">
+    <div class="login-modal">
+      <div class="login-box">
+        <div class="login-wrap">
+          <h3>회원 로그인</h3>
+          <form class="login-form">
+            <label for="user-id">아이디</label>
+            <input type="text" id="user-id" name="user-id">
+            <label for="user-pw">비밀번호</label>
+            <input type="password" id="user-pw" name="user-pw" placeholder="영문/숫자/특수문자 조합하여 6~16자리">
+            <div class="id-pw">
+              <div class="check-box">
+                <input type="checkbox" id="id-save" name="id-save">
+                <label for="id-save">아이디 저장</label>
+              </div>
+              <a href="#">아이디/비밀번호찾기</a>
+            </div>
+            <button type="submit" class="btn">로그인</button>
+          </form>
+          <button class="sign-up dark btn">회원가입</button>
+          <div class="sns-login">
+            <button class="naver login">
+              <img src="./img/login_naver.png" alt="login_naver">
+              <span>네이버로그인</span>
+            </button>
+            <button class="kakao login">
+              <img src="./img/login_kakao.png" alt="login_kakao">
+              <span>카카오톡로그인</span>
+            </button>
+          </div>
+        </div>
+        <div class="nonMember-wrap">
+          <h3>비회원주문</h3>
+          <form class="nonMember-form">
+            <label for="nM-name">주문자명</label>
+            <input type="text" id="nM-name" name="nM-name" placeholder="주문자명을 입력하세요">
+            <label for="nM-pw">비밀번호</label>
+            <input type="password" id="nM-pw" name="nM-pw" placeholder="비밀번호를 입력하세요">
+            <label for="nM-number">연락처</label>
+            <div class="number-box">
+              <select name="nM-number" id="nM-number">
+                <option value="010" selected>010</option>
+                <option value="011">011</option>
+                <option value="016">016</option>
+                <option value="017">017</option>
+                <option value="018">018</option>
+                <option value="019">019</option>
+              </select>
+              <input type="text" name="nM-number">
+              <input type="text" name="nM-number">
+            </div>
+            <button type="submit" class="order-check btn">주문조회</button>
+          </form>
+        </div>
+      </div>
+      <button class="close btn"><img src="./img/login_close.png" alt="login_close"></button>
+    </div>
+  </div>
+
+  <div class="m-login-modal-wrap">
+    <div class="login-modal">
+      <div class="top">
+        <button class="close btn"><i class="fa-solid fa-arrow-left"></i></button>
+        <h2 class="login-title">LOGIN</h2>
+      </div>
+      <div class="info-wrap">
+        <img src="./img/login_logo.png" alt="login-logo">
+        <p>신규 가입 시 16,000원 쿠폰팩 지급!</p>
+        <p>신규 회원 전용 24시간 100원 특가까지!</p>
+      </div>
+      <div class="login-box">
+        <div class="btn-wrap">
+          <button class="on">회원 로그인</button>
+          <button>비회원주문</button>
+        </div>
+        <div class="login-wrap on tab">
+          <form class="login-form">
+            <label for="m-user-id">아이디</label>
+            <input type="text" id="m-user-id" name="m-user-id">
+            <label for="m-user-pw">비밀번호</label>
+            <input type="password" id="m-user-pw" name="m-user-pw" placeholder="영문/숫자/특수문자 조합하여 6~16자리">
+            <div class="id-pw">
+              <div class="check-box">
+                <input type="checkbox" id="m-id-save" name="m-id-save">
+                <label for="m-id-save">아이디 저장</label>
+              </div>
+              <a href="#">아이디/비밀번호찾기</a>
+            </div>
+            <button type="submit" class="btn">로그인</button>
+          </form>
+          <button class="sign-up dark btn">회원가입</button>
+          <div class="sns-login">
+            <button class="naver login">
+              <img src="./img/login_naver.png" alt="login_naver">
+              <span>네이버로그인</span>
+            </button>
+            <button class="kakao login">
+              <img src="./img/login_kakao.png" alt="login_kakao">
+              <span>카카오톡로그인</span>
+            </button>
+          </div>
+        </div>
+        <div class="nonMember-wrap tab">
+          <form class="nonMember-form">
+            <label for="m-nM-name">주문자명</label>
+            <input type="text" id="m-nM-name" name="m-nM-name" placeholder="주문자명을 입력하세요">
+            <label for="m-nM-pw">비밀번호</label>
+            <input type="password" id="m-nM-pw" name="m-nM-pw" placeholder="비밀번호를 입력하세요">
+            <label for="nM-number">연락처</label>
+            <div class="number-box">
+              <select name="nM-number" id="m-nM-number">
+                <option value="010" selected>010</option>
+                <option value="011">011</option>
+                <option value="016">016</option>
+                <option value="017">017</option>
+                <option value="018">018</option>
+                <option value="019">019</option>
+              </select>
+              <input type="text" name="m-nM-number">
+              <input type="text" name="m-nM-number">
+            </div>
+            <button type="submit" class="order-check btn">주문조회</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <header class="header-wrap">
     <div class="top">
       <a href="#"><i class="fa-solid fa-bars"></i></a>
@@ -29,8 +157,8 @@
       <h3>통합회원가입</h3>
       <div class="inner">
         <ul class="util-area">
-          <li><a href="#">로그인</a></li>
-          <li><a href="#">회원가입</a></li>
+          <li class="login"><a href="#">로그인</a></li>
+          <li><a href="signUp.html">회원가입</a></li>
           <li><a href="#">아이디찾기</a></li>
           <li><a href="#">비밀번호재발급</a></li>
         </ul>
