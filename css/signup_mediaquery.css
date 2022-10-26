@@ -41,6 +41,7 @@
     display: none;
   }
   .contents-wrap .sign-up-wrap .kakao {
+    max-width: 500px;
     width: 100%;
   }
   .contents-wrap .sign-up-wrap .line {
