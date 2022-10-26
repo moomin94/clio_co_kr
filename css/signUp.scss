@@ -17,14 +17,17 @@
       &.login {
         display: inline-block;
         border: 2px solid #111111;
-        padding: 5px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
+        text-align: center;
         i {
-          font-size: 16px;
+          margin-top: 5px;
+          font-size: 15px;
         }
       }
       i {
-        font-size: 22px;
+        font-size: 20px;
         color: #111111;
       }
     }
@@ -86,6 +89,9 @@
 
 .contents-wrap {
   width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
   .welcome-banner {
     width: 800px;
     height: 595px;
@@ -124,7 +130,7 @@
       }
     }
     .kakao {
-      width: 500px;
+      max-width: 500px;
       height: 70px;
       line-height: 70px;
       background-color: #FAE100;

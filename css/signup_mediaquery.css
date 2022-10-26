@@ -7,14 +7,64 @@
     justify-content: space-between;
   }
   .header-wrap .top h1 {
-    width: 30%;
+    width: 25%;
     min-width: 150px;
   }
   .header-wrap .top h1 img {
     width: 100%;
+    display: block;
   }
   .header-wrap .top > a {
     opacity: 1;
     visibility: visible;
+  }
+  .header-wrap .bottom {
+    height: auto;
+  }
+  .header-wrap .bottom h3 {
+    display: block;
+  }
+  .header-wrap .bottom .inner {
+    display: none;
+  }
+  .contents-wrap .welcome-banner {
+    width: 100%;
+    height: 80vw;
+    margin-bottom: 20px;
+    background-position: top center;
+  }
+  .contents-wrap .sign-up-wrap {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .contents-wrap .sign-up-wrap h2 {
+    display: none;
+  }
+  .contents-wrap .sign-up-wrap .kakao {
+    width: 100%;
+  }
+  .contents-wrap .sign-up-wrap .line {
+    width: 100%;
+  }
+  .contents-wrap .sign-up-wrap .line::after {
+    width: 100%;
+  }
+  .contents-wrap .sign-up-wrap .order {
+    width: 100%;
+  }
+  .contents-wrap .sign-up-wrap .order li {
+    width: 15%;
+    margin: 0 5vw;
+  }
+  .contents-wrap .sign-up-wrap form {
+    width: 100%;
+  }
+  .contents-wrap .sign-up-wrap .info-msg {
+    width: 100%;
+  }
+  .contents-wrap .sign-up-wrap .alert-box {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0 40px;
   }
 }/*# sourceMappingURL=signup_mediaquery.css.map */
