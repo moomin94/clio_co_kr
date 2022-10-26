@@ -1,0 +1,22 @@
+@import '_variable';
+
+@media screen and (max-width:1024px){
+    .header-wrap {
+        margin-bottom: 40px;
+        .top {
+          height: 50px;
+          justify-content: space-between;
+          h1 {
+            width: 30%;
+            min-width: 150px;
+            img {
+                width: 100%;
+            }
+          }
+          > a {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+    }
+}

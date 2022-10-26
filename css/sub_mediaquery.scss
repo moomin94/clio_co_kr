@@ -1,0 +1,136 @@
+@import '_variable';
+
+
+@media screen and (max-width:1024px){
+    //cart.html
+    .contents-wrap {
+        h2 {
+            line-height: 100px;
+            font-size: 24px;
+        }
+        .cart-wrap {
+            .cart-btn {
+                height: 40px;
+                button {
+                    font-size: 16px;
+                }
+            }
+            .cart-box {
+                padding: 20px 15px;
+                .product-list {
+                    ul {
+                        li {
+                            box-sizing: content-box;
+                            padding: 20px 10px;
+                            display: block;
+                            position: relative;
+                            .left {
+                                input {
+                                    margin: 0 10px 0 0;
+                                }
+                                .product-txt {
+                                    width: 65%;
+                                    margin-left: 20px;
+                                    .product-name {
+                                        font-size: 14px;
+                                    }
+                                    .product-option {
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                            .right {
+                                position: absolute;
+                                height: 50px;
+                                bottom: 10px;
+                                right: 0;
+                                .number-select {
+                                    width: 100px;
+                                    height: 20px;
+                                    button {
+                                        width: 20px;
+                                        height: 20px;
+                                        font-size: 12px;
+                                        line-height: 20px;
+                                    }
+                                    span {
+                                        height: 20px;
+                                        line-height: 20px;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .cost-wrap {
+                        padding: 25px 10px 0px;
+                        flex-direction: column;
+                        > div {
+                            margin: 0;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            &.cost-total {
+                                &::after {
+                                  display: none;
+                                }
+                            }
+                            &.cost-sale {
+                                &::before {
+                                    display: none;
+                                }
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            &.cost-del {
+                                margin-bottom: 10px;
+                                &::before {
+                                    display: none;
+                                }
+                                &::after {
+                                    display: none;
+                                }                            
+                            }
+                            &.cost-pay {
+                                padding: 10px 0;
+                                border-top: 1px solid #d8d8d8;
+                                p {
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                        h4 {
+                            margin-top: 0;
+                            &.on {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+                .title {
+                    padding: 10px 15px;
+                    font-size: 16px;
+                }
+                .select-btn {
+                    li {
+                        a {
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .order-wrap {
+            padding: 0 10px;
+            .order-btn-box {
+                button {
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

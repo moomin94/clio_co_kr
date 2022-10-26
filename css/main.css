@@ -4,6 +4,7 @@
   width: 100%;
 }
 
+.m-login-modal-wrap,
 .login-modal-wrap {
   width: 100%;
   height: 100%;
@@ -19,16 +20,19 @@
   transition: all 0.3s;
   z-index: 9999;
 }
+.m-login-modal-wrap.on,
 .login-modal-wrap.on {
   opacity: 1;
   visibility: visible;
 }
+.m-login-modal-wrap .login-modal,
 .login-modal-wrap .login-modal {
   position: relative;
   width: 1000px;
   background-color: #f4f4f4;
   padding: 80px 30px 30px;
 }
+.m-login-modal-wrap .login-modal .login-box,
 .login-modal-wrap .login-modal .login-box {
   width: 100%;
   background-color: #ffffff;
@@ -36,6 +40,7 @@
   justify-content: space-between;
   padding: 30px 20px 50px;
 }
+.m-login-modal-wrap .login-modal .login-box > div,
 .login-modal-wrap .login-modal .login-box > div {
   width: 50%;
   padding: 0 30px;
@@ -43,17 +48,20 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
+.m-login-modal-wrap .login-modal .login-box > div h3,
 .login-modal-wrap .login-modal .login-box > div h3 {
   text-align: center;
   font-size: 26px;
   color: #333333;
   margin-bottom: 30px;
 }
+.m-login-modal-wrap .login-modal .login-box > div label,
 .login-modal-wrap .login-modal .login-box > div label {
   font-size: 14px;
   color: #333333;
   font-weight: 600;
 }
+.m-login-modal-wrap .login-modal .login-box > div input,
 .login-modal-wrap .login-modal .login-box > div input {
   font-size: 14px;
   height: 44px;
@@ -63,11 +71,13 @@
   padding: 0 10px;
   outline: none;
 }
+.m-login-modal-wrap .login-modal .login-box > div form,
 .login-modal-wrap .login-modal .login-box > div form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
+.m-login-modal-wrap .login-modal .login-box > div .btn,
 .login-modal-wrap .login-modal .login-box > div .btn {
   width: 100%;
   height: 50px;
@@ -77,14 +87,17 @@
   color: #000000;
   border: 1px solid #000000;
 }
+.m-login-modal-wrap .login-modal .login-box > div .btn.dark,
 .login-modal-wrap .login-modal .login-box > div .btn.dark {
   background-color: #000000;
   color: #ffffff;
 }
+.m-login-modal-wrap .login-modal .login-box > div .btn.sign-up,
 .login-modal-wrap .login-modal .login-box > div .btn.sign-up {
   position: relative;
   margin-top: 10px;
 }
+.m-login-modal-wrap .login-modal .login-box > div .btn.sign-up::before,
 .login-modal-wrap .login-modal .login-box > div .btn.sign-up::before {
   content: "";
   display: block;
@@ -99,6 +112,7 @@
   border-left: 10px solid transparent;
   margin-left: 8px;
 }
+.m-login-modal-wrap .login-modal .login-box > div .btn.sign-up::after,
 .login-modal-wrap .login-modal .login-box > div .btn.sign-up::after {
   content: "최대 16,000원 쿠폰팩";
   width: 136px;
@@ -114,58 +128,71 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.m-login-modal-wrap .login-modal .login-box .login-wrap,
 .login-modal-wrap .login-modal .login-box .login-wrap {
   border-right: 1px solid #dddddd;
   position: relative;
 }
+.m-login-modal-wrap .login-modal .login-box .login-wrap .id-pw,
 .login-modal-wrap .login-modal .login-box .login-wrap .id-pw {
   width: 100%;
   justify-content: space-between;
   display: flex;
   margin-bottom: 30px;
 }
+.m-login-modal-wrap .login-modal .login-box .login-wrap .id-pw .check-box,
 .login-modal-wrap .login-modal .login-box .login-wrap .id-pw .check-box {
   display: flex;
   align-items: center;
 }
+.m-login-modal-wrap .login-modal .login-box .login-wrap .id-pw .check-box input,
 .login-modal-wrap .login-modal .login-box .login-wrap .id-pw .check-box input {
   margin: 0;
   margin-right: 5px;
   height: auto;
 }
+.m-login-modal-wrap .login-modal .login-box .login-wrap .id-pw .check-box label,
 .login-modal-wrap .login-modal .login-box .login-wrap .id-pw .check-box label {
   color: #666666;
   font-weight: 400;
 }
+.m-login-modal-wrap .login-modal .login-box .login-wrap .id-pw a,
 .login-modal-wrap .login-modal .login-box .login-wrap .id-pw a {
   font-size: 14px;
 }
+.m-login-modal-wrap .login-modal .login-box .login-wrap .sns-login,
 .login-modal-wrap .login-modal .login-box .login-wrap .sns-login {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
+.m-login-modal-wrap .login-modal .login-box .login-wrap .sns-login button,
 .login-modal-wrap .login-modal .login-box .login-wrap .sns-login button {
   width: 70px;
 }
+.m-login-modal-wrap .login-modal .login-box .login-wrap .sns-login button:first-child,
 .login-modal-wrap .login-modal .login-box .login-wrap .sns-login button:first-child {
   margin-right: 20px;
 }
+.m-login-modal-wrap .login-modal .login-box .login-wrap .sns-login button img,
 .login-modal-wrap .login-modal .login-box .login-wrap .sns-login button img {
   width: 90%;
 }
+.m-login-modal-wrap .login-modal .login-box .login-wrap .sns-login button span,
 .login-modal-wrap .login-modal .login-box .login-wrap .sns-login button span {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: -0.1em;
 }
+.m-login-modal-wrap .login-modal .login-box .nonMember-wrap .number-box,
 .login-modal-wrap .login-modal .login-box .nonMember-wrap .number-box {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.m-login-modal-wrap .login-modal .login-box .nonMember-wrap .number-box select,
 .login-modal-wrap .login-modal .login-box .nonMember-wrap .number-box select {
   width: 31%;
   height: 44px;
@@ -173,16 +200,96 @@
   margin: 10px 0 20px;
   outline: none;
 }
+.m-login-modal-wrap .login-modal .login-box .nonMember-wrap .number-box input,
 .login-modal-wrap .login-modal .login-box .nonMember-wrap .number-box input {
   width: 31%;
 }
+.m-login-modal-wrap .login-modal .close,
 .login-modal-wrap .login-modal .close {
   position: absolute;
   top: 20px;
   right: 30px;
 }
+.m-login-modal-wrap .login-modal .close img,
 .login-modal-wrap .login-modal .close img {
   width: 100%;
+}
+
+.m-login-modal-wrap {
+  background-color: rgb(244, 244, 244);
+  overflow-y: auto;
+}
+.m-login-modal-wrap .login-modal {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+}
+.m-login-modal-wrap .login-modal .top {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.m-login-modal-wrap .login-modal .top .close {
+  width: 5%;
+  position: relative;
+  top: 0;
+  right: 0;
+  text-align: left;
+}
+.m-login-modal-wrap .login-modal .top .close i {
+  font-size: 20px;
+  color: #111111;
+}
+.m-login-modal-wrap .login-modal .top .login-title {
+  width: 95%;
+  text-align: center;
+  font-size: 24px;
+  color: #333333;
+}
+.m-login-modal-wrap .login-modal .info-wrap {
+  margin-bottom: 30px;
+}
+.m-login-modal-wrap .login-modal .info-wrap img {
+  width: 20%;
+  min-width: 100px;
+  margin-bottom: 12px;
+}
+.m-login-modal-wrap .login-modal .info-wrap p {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+.m-login-modal-wrap .login-modal .login-box {
+  flex-direction: column;
+  padding: 0;
+}
+.m-login-modal-wrap .login-modal .login-box .btn-wrap {
+  width: 100%;
+  height: 45px;
+  padding: 0;
+}
+.m-login-modal-wrap .login-modal .login-box .btn-wrap button {
+  width: 50%;
+  line-height: 45px;
+  color: #999999;
+  background-color: #f4f4f4;
+  font-size: 15px;
+}
+.m-login-modal-wrap .login-modal .login-box .btn-wrap button.on {
+  background-color: #ffffff;
+  color: #333333;
+  font-weight: 500;
+}
+.m-login-modal-wrap .login-modal .login-box .tab {
+  display: none;
+  width: 100%;
+  padding: 30px 15px;
+}
+.m-login-modal-wrap .login-modal .login-box .tab.on {
+  display: block;
 }
 
 .happy-talk {

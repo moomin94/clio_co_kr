@@ -1,0 +1,20 @@
+@media screen and (max-width: 1024px) {
+  .header-wrap {
+    margin-bottom: 40px;
+  }
+  .header-wrap .top {
+    height: 50px;
+    justify-content: space-between;
+  }
+  .header-wrap .top h1 {
+    width: 30%;
+    min-width: 150px;
+  }
+  .header-wrap .top h1 img {
+    width: 100%;
+  }
+  .header-wrap .top > a {
+    opacity: 1;
+    visibility: visible;
+  }
+}/*# sourceMappingURL=signup_mediaquery.css.map */
