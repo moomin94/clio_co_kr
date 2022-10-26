@@ -67,7 +67,8 @@
 .header-wrap .bottom .inner ul.util-area li:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 0;
   width: 1px;
   height: 16px;

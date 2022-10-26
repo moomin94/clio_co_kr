@@ -10,6 +10,8 @@
   <meta property="og:image" content="http://img.clubclio.co.kr/common/images/default/pc_logo.jpg">
   <title>ClubClio</title>
   <link rel="shortcut icon" href="./img/favicon1.ico">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/mediaquery.css">
@@ -184,21 +186,21 @@
           <li class="sign-up"><a href="signUp.html">회원가입</a></li>
           <li><a href="#">CS</a></li>
           <li><a href="#">공지사항</a></li>
-          <li class="cart"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+          <li class="cart"><a href="cart.html"><img src="./img/pc_cart_btn.png" alt="pc-cart-button"></a></li>
         </ul>
       </div>
       <div class="header-middle">
         <h1><a href="#"><img src="./img/logo.png" alt="logo"></a></h1>
         <div class="search-area">
           <form class="search-form">
-            <input type="text" class="search-input" placeholder="두께가 느껴지지않는 #얇은커버 #요즘파데">
+            <input type="text" class="search-input" placeholder="NEW 클리오 #노스탠다드 #프로아이팔레트">
             <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
           <ul class="search-tag">
-            <li><a href="#">#클리오</a></li>
-            <li><a href="#">#신상파데</a></li>
-            <li><a href="#">#구매하면</a></li>
-            <li><a href="#">#스파츌라까지♥</a></li>
+            <li><a href="#">#홀리데이</a></li>
+            <li><a href="#">#리미티드</a></li>
+            <li><a href="#">#선런칭</a></li>
+            <li><a href="#">#특가+굿즈까지</a></li>
           </ul>
           <ul class="m-menu">
             <li><a href="#"><i class="fa-regular fa-user login"></i></a></li>
@@ -1431,19 +1433,21 @@
 
     <div class="insta-wrap">
       <h3>INSTAGRAM</h3>
-      <div class="insta-slide">
-        <ul>
-          <li><a href="#"><img src="./img/insta_img_1.jpg" alt="insta img"></a></li>
-          <li><a href="#"><img src="./img/insta_img_2.jpg" alt="insta img"></a></li>
-          <li><a href="#"><img src="./img/insta_img_3.jpg" alt="insta img"></a></li>
-          <li><a href="#"><img src="./img/insta_img_4.jpg" alt="insta img"></a></li>
-          <li><a href="#"><img src="./img/insta_img_5.jpg" alt="insta img"></a></li>
-          <li><a href="#"><img src="./img/insta_img_6.jpg" alt="insta img"></a></li>
-          <li><a href="#"><img src="./img/insta_img_7.jpg" alt="insta img"></a></li>
-          <li><a href="#"><img src="./img/insta_img_8.jpg" alt="insta img"></a></li>
-          <li><a href="#"><img src="./img/insta_img_9.jpg" alt="insta img"></a></li>
-          <li><a href="#"><img src="./img/insta_img_10.jpg" alt="insta img"></a></li>
-        </ul>
+      <div class="swiper mySwiper insta-slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide insta-1"></div>
+          <div class="swiper-slide insta-2"></div>
+          <div class="swiper-slide insta-3"></div>
+          <div class="swiper-slide insta-4"></div>
+          <div class="swiper-slide insta-5"></div>
+          <div class="swiper-slide insta-6"></div>
+          <div class="swiper-slide insta-7"></div>
+          <div class="swiper-slide insta-8"></div>
+          <div class="swiper-slide insta-9"></div>
+          <div class="swiper-slide insta-10"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
 
@@ -1500,5 +1504,22 @@
       </div>
     </footer>
   </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 8,
+      spaceBetween: 20,
+      // touchRatio: 0,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
