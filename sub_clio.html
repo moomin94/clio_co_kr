@@ -13,10 +13,13 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/sub_clio.css">
   <link rel="stylesheet" href="./css/mediaquery.css">
+  <link rel="stylesheet" href="./css/sub_mediaquery.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="./js/common.js"></script>
+  <script src="./js/sub_clio.js"></script>
 </head>
 <body>
   <div class="container">
@@ -366,7 +369,7 @@
         </ul>
       </div>
       <div class="header-middle">
-        <h1><a href="#"><img src="./img/logo.png" alt="logo"></a></h1>
+        <h1><a href="index.html"><img src="./img/logo.png" alt="logo"></a></h1>
         <div class="search-area">
           <form class="search-form">
             <input type="text" class="search-input" placeholder="NEW 클리오 #노스탠다드 #프로아이팔레트">
@@ -414,7 +417,7 @@
             </li>
           </ul>
           <ul class="main-nav area">
-            <li>
+            <li class="menu-clio">
               <a href="#">CLIO</a>
               <div class="sub-nav-area clio">
                 <ul class="sub-nav">
@@ -462,7 +465,7 @@
                 </ul>
               </div>
             </li>
-            <li>
+            <li class="peripera">
               <a href="#">peripera</a>
               <div class="sub-nav-area peripera">
                 <ul class="sub-nav">
@@ -510,7 +513,7 @@
                 </ul>
               </div>
             </li>
-            <li>
+            <li class="goodal">
               <a href="#">goodal</a>
               <div class="sub-nav-area goodal">
                 <ul class="sub-nav">
@@ -859,783 +862,396 @@
       </div>
     </header>
 
-    <div class="main-wrap">
-      <ul class="main-img-wrap">
-        <li id="last-clone" class="slide-item" data-id="4"><img src="./img/main_bg_4.jpg" alt="main-img-4"></li>
-        <li class="slide-item" data-id="1"><img src="./img/main_bg_1.jpg" alt="main-img-1"></li>
-        <li class="slide-item" data-id="2"><img src="./img/main_bg_2.jpg" alt="main-img-2"></li>
-        <li class="slide-item" data-id="3"><img src="./img/main_bg_3.jpg" alt="main-img-3"></li>
-        <li class="slide-item" data-id="4"><img src="./img/main_bg_4.jpg" alt="main-img-4"></li>
-        <li id="first-clone" class="slide-item" data-id="1"><img src="./img/main_bg_1.jpg" alt="main-img-1"></li>
-      </ul>
-      <ul class="main-btn-wrap">
-        <li class="prev-btn"><button><i class="fa-solid fa-chevron-left"></i></button></li>
-        <li class="page"><span class="now">1</span> / 4</li>
-        <li class="next-btn"><button><i class="fa-solid fa-chevron-right"></i></button></li>
-        <li class="play-pause-btn"><button><i class="fa-solid fa-pause"></i></button></li>
-      </ul>
-    </div>
-
-    <div class="banner-wrap">
-      <a href="#" class="banner left"></a>
-      <a href="#" class="banner right"></a>
-    </div>
-    
-    <div class="time-deal-wrap">
-      <h3>TIME DEAL</h3>
-      <p class="real-time"><span class="hr">00</span>:<span class="min">00</span>:<span class="sec">00</span></p>
-      <div class="banner-wrap time-deal">
-        <a href="#" class="banner left">
-          <img src="./img/time_deal_img_1.jpg" alt="time_deal_img_1">
-          <div class="text-wrap">
-            <p class="title">[NEW/도토리컬렉션] 잉크 무드매트스틱 [증정] 핑거팁 브러쉬</p>
-            <p class="cost"><span class="original">12,0000</span>9,000<span class="sale">25%</span></p>
+    <div class="main-wrap">     
+      <div class="m-title">
+        <h2>클리오</h2>
+      </div>
+      <div class="logo">
+        <img src="./img/sub_logo_clio.png" alt="clio logo">
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide white">
+            <img src="./img/sub_main_1_clio.jpg" alt="main img1">
+            <div class="title-box white">
+              <h4>더뉴쿠션&파운데이션</h4>
+              <p>베이스 맛집 왕의귀환!</p>
+            </div>
           </div>
-        </a>
-        <a href="#" class="banner right">
-          <img src="./img/time_deal_img_2.jpg" alt="time_deal_img_2">
-          <div class="text-wrap">
-            <p class="title">프로 아이 유니버스 [한정증정] 브러쉬 2종 세트+기프트박스</p>
-            <p class="cost"><span class="original">45,0000</span>26,800<span class="sale">40%</span></p>
+          <div class="swiper-slide black">
+            <img src="./img/sub_main_2_clio.jpg" alt="main img2">
+            <div class="title-box">
+              <h4>쉐이드 앤 섀도우 팔레트</h4>
+              <p>음영부터 쉐딩, 블러셔까지!</p>
+            </div>
           </div>
-        </a>
+        </div>
+        <div class="btn-wrap">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-pause"><img src="./img/visual_pause.png" alt="pause"></div>
+        </div>
       </div>
     </div>
 
-    <div class="best-new-wrap">
-      <h3>실시간 베스트&신상품</h3>
-      <div class="product-wrap">
-        <div class="btn-wrap">
-          <button class="product-btn best on" href="#">BEST</button>
-          <button class="product-btn new" href="#">NEW</button>
+    <div class="brand-wrap">
+      <div class="left"><img src="./img/brand_logo_clio.png" alt="brand image"></div>
+      <div class="right">
+        <h6>클리오</h6>
+        <p>Express your own confidence!</p>
+      </div>
+    </div>
+
+    <div class="banner-slide-wrap">
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide white">
+            <img src="./img/sub_slide_1_clio.jpg" alt="banner img1">
+            <div class="title-box white">
+              <p>홀리데이 한정컬렉션<br>NEW 클리오 노스탠다드</p>
+            </div>
+          </div>
+          <div class="swiper-slide black1">
+            <img src="./img/sub_slide_2_clio.jpg" alt="banner img2">
+            <div class="title-box">
+              <p>입술 위 스며드는 감성컬러<br>NEW 쉬폰 무드립</p>
+            </div>
+          </div>
+          <div class="swiper-slide black2">
+            <img src="./img/sub_slide_3_clio.jpg" alt="banner img3">
+            <div class="title-box">
+              <p>도톰폭신 감성컬러<br>데일리 뽀글이 파우치</p>
+            </div>
+          </div>
+          <div class="swiper-slide black3">
+            <img src="./img/sub_slide_4_clio.jpg" alt="banner img4">
+            <div class="title-box">
+              <p>프로 아이 유니버스<br>+ 브러쉬 2종 증정!</p>
+            </div>
+          </div>
         </div>
-        <ul class="product-list best on">
+        <div class="swiper-button-next"><img src="./img/pc_btn_slide_next.png" alt="btn next img"></div>
+      </div>
+    </div>
+
+    <div class="best-new-wrap best-seller">
+      <h3>BEST SELLER</h3>
+      <div class="product-wrap">
+        <ul class="product-list best">
           <li><a href="#">
             <img src="./img/sub_list_clio_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
             <p class="info">#런칭한달만에 #베스트 #퍼프증정까지!</p>
-            <p class="title">킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
+            <p class="title">[클리오]킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증정] 쿠션퍼프 3p</p>
             <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
             <p class="review">리뷰 734<span class="dawn">새벽배송</span></p>
             <button class="btn new">NEW</button>
             <button class="btn best">BEST</button>
+            <button class="btn gift">사은품</button>
           </a></li>
           <li><a href="#">
-            <img src="./img/sub_list_alphab_3.jpg" alt="유브이 밤">
-            <p class="info">#주름질틈없이 #햇빛차단 #태양방패스틱</p>
-            <p class="title">타임 쉴드 유브이 밤</p>
-            <p class="cost"><span class="sale">46%</span> 21,000원 <span class="original">39,000</span></p>
-            <p class="review">리뷰 82<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-            <button class="btn best">BEST</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/sub_list_twinkle_3.jpg" alt="글리터링 아이스틱">
-            <p class="info">#갓성비 #애교살스틱 #동안눈매연출</p>
-            <p class="title">글리터링 아이스틱</p>
-            <p class="cost"><span class="sale">20%</span> 5,520원 <span class="original">6,900</span></p>
-            <p class="review">리뷰 1,615<span class="dawn">새벽배송</span></p>
-            <button class="btn best">BEST</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/sub_list_ablack_3.jpg" alt="멀티 팔레트">
-            <p class="info">#올댓가을 #팔레트하나로 #세상그윽</p>
-            <p class="title">[NEW 9,10호 출시!] 글램체인지 멀티 팔레트</p>
-            <p class="cost"><span class="sale">34%</span> 19,900원 <span class="original">30,000</span></p>
-            <p class="review">리뷰 1,810<span class="dawn">새벽배송</span></p>
-            <button class="btn best">BEST</button>
-          </a></li>
-          <li>
-            <a href="#">
-              <img src="./img/sub_list_healing_2.jpg" alt="크림 트리트먼트">
-              <p class="info">#손상모발용 #노워시 #크림트리트먼트</p>
-              <p class="title">울트라 프로틴 노워시 리커버리 크림 트리트먼트 130</p>
-              <p class="cost"><span class="sale">30%</span> 15,400원 <span class="original">22,000</span></p>
-              <p class="review">리뷰 48<span class="dawn">새벽배송</span></p>
-              <button class="btn best">BEST</button>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./img/sub_list_healing_3.jpg" alt="헤어 트리트먼트">
-              <p class="info">#대용량750ml #집에서 #클리닉한듯!</p>
-              <p class="title">울트라 프로틴 헤어 트리트먼트 750ml</p>
-              <p class="cost"><span class="sale">30%</span> 16,800원 <span class="original">24,000</span></p>
-              <p class="review">리뷰 357<span class="dawn">새벽배송</span></p>
-              <button class="btn new">NEW</button>
-              <button class="btn best">BEST</button>
-            </a>
-          </li>
-          <li><a href="#">
-            <img src="./img/sub_list_peri_1.jpg" alt="아이팔레트">
-            <p class="info">#빈티지니팅 #컬러무드 #신상컬러출시!</p>
-            <p class="title">[NEW 컬러] 심플레인 아이 팔레트 [증정] 워터풀네일</p>
-            <p class="cost"><span class="sale">30%</span> 16,800원 <span class="original">24,000</span></p>
-            <p class="review">리뷰 255<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-            <button class="btn best">BEST</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/sub_list_dermatory_2.jpg" alt="수분픽업마스크">
-            <p class="info">#뽑아쓰는 #쿨링&수분케어 #마스크팩</p>
-            <p class="title">프로 히알샷 수분 픽업 마스크 [증정] 물광앰플 10g</p>
-            <p class="cost"><span class="sale">45%</span> 13,200원 <span class="original">24,000</span></p>
-            <p class="review">리뷰 313<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-            <button class="btn best">BEST</button>
-          </a></li>
-          <a href="#" class="more">전체보기<i class="fa-solid fa-chevron-right"></i></a>
-        </ul>
-        <ul class="product-list new">
-          <li><a href="#">
-            <img src="./img/sub_list_alphab_1.jpg" alt="엑소 콜라겐 앰플">
-            <p class="info">#앰플하나로 #영양 #탄력케어!</p>
-            <p class="title">[런칭특가] 타임리턴 엑소 콜라겐 앰플</p>
-            <p class="cost"><span class="sale">40%</span> 26,900원 <span class="original">45,000</span></p>
-            <p class="review">리뷰 0<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/sub_list_twinkle_2.jpg" alt="페이스 플래쉬 팔레트">
-            <p class="info">#맑음영롱 #분위기조장 #입체페이스완성</p>
-            <p class="title">페이스 플래쉬 팔레트</p>
-            <p class="cost"><span class="sale">39%</span> 7,900원 <span class="original">12,900</span></p>
-            <p class="review">리뷰 51<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/sub_list_alphab_2.jpg" alt="골드 콜라겐 밤">
-            <p class="info">#24K골드 #어린콜라겐 #중력방패스틱</p>
-            <p class="title">타임 리턴 골드 콜라겐 밤</p>
-            <p class="cost"><span class="sale">45%</span> 22,900원 <span class="original">42,000</span></p>
-            <p class="review">리뷰 57<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/sub_list_type_3.jpg" alt="핸드워시">
-            <p class="info">#일상을채우는 #감각적인 #향기라인업</p>
-            <p class="title">TYPE No. 핸드워시 350ml (3종 중 택1)</p>
-            <p class="cost"><span class="sale">10%</span> 18,900원 <span class="original">21,000</span></p>
-            <p class="review">리뷰 3<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/sub_list_peri_2.jpg" alt="워터 블러 틴트">
-            <p class="info">#6,7,8호 #가을무드 #신상컬러출시!</p>
-            <p class="title">[NEW 컬러/1+1] 심플레인 워터 블러틴트 [증정] 워</p>
-            <p class="cost"><span class="sale">35%</span> 15,600원 <span class="original">24,000</span></p>
-            <p class="review">리뷰 429<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/sub_list_clio_2.jpg" alt="킬커버 파운웨어 파운데이션">
-            <p class="info">#찰떡궁합 #스파츌라 #한정수량증정!</p>
-            <p class="title">킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
-            <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
-            <p class="review">리뷰 26<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/sub_list_goodal_1.jpg" alt="잡티케어세럼">
-            <p class="info">#베스트셀러의 #업그레이드 #대용량!</p>
-            <p class="title">청귤 비타C 잡티케어 세럼 50ml [증정] 세럼마스크(AD</p>
-            <p class="cost"><span class="sale">29%</span> 29,900원 <span class="original">42,000</span></p>
-            <p class="review">리뷰 32<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/sub_list_clio_3.jpg" alt="데일리 뽀글이 파우치">
-            <p class="info">#수납력갑 #도톰폭신 #감성컬러</p>
-            <p class="title">[NEW] 데일리 뽀글이 파우치</p>
-            <p class="cost"><span class="sale">20%</span> 9,600원 <span class="original">12,000</span></p>
-            <p class="review">리뷰 6<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <a href="#" class="more">전체보기<i class="fa-solid fa-chevron-right"></i></a>
-        </ul>
-      </div>
-    </div>
-
-    <div class="keyword-wrap">
-      <h3>클럽클리오 추천 키워드</h3>
-      <ul class="keyword-list">
-        <li>
-          <a href="#">
-            <img src="./img/keyword_banner_1.png" alt="keyword_banner_1">
-            <h4>#클리오 FW</h4>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./img/keyword_banner_2.png" alt="keyword_banner_2">
-            <h4>#심플레인</h4>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./img/keyword_banner_3.png" alt="keyword_banner_3">
-            <h4>#도토리컬렉션</h4>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./img/keyword_banner_4.png" alt="keyword_banner_4">
-            <h4>#잡티케어</h4>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./img/keyword_banner_5.png" alt="keyword_banner_5">
-            <h4>#물광보습</h4>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./img/keyword_banner_6.png" alt="keyword_banner_6">
-            <h4>#비건라이스</h4>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./img/keyword_banner_7.png" alt="keyword_banner_7">
-            <h4>#타입넘버</h4>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="banner-wrap event">
-      <h3>SPECIAL EVENT</h3>
-      <a href="https://pf.kakao.com/_rxgZPV" class="banner left">
-        <p>기다리던 빅-세일 시작</p>
-        <p>최대할인+30% 쿠폰까지!</p>
-      </a>
-      <a href="#" class="banner right">
-        <p>클리오 신상+한정기프트♥</p>
-        <p>킬커버 파운웨어 파운데이션</p>
-      </a>
-    </div>
-
-    <div class="online-wrap">
-      <div class="online-inner on">
-        <h3>ONLY 온라인 전용</h3>
-        <ul class="online-list">
-          <li>
-            <a href="#">
-              <img src="./img/online_img_1.jpg" alt="online_img_1">
-              <h4>NEW 뽀글이 파우치</h4>
-              <p>#도톰폭신 #수납력갑</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./img/online_img_2.jpg" alt="online_img_2">
-              <h4>NEW 콜라겐 앰플</h4>
-              <p>앰플 하나로 탄력&수분케어</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./img/online_img_3.jpg" alt="online_img_3">
-              <h4>NEW 심플레인 컬렉션</h4>
-              <p>#가을신상컬러 #니팅코랄</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="online-inner">
-        <h3>공식몰 단독 구성</h3>
-        <ul class="online-list">
-          <li>
-            <a href="#">
-              <img src="./img/online_img_4.jpg" alt="online_img_4">
-              <h4>신상 파운데이션 사고</h4>
-              <p>메이크업 스파츌라 GET!</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./img/online_img_5.jpg" alt="online_img_5">
-              <h4>잡티이별 세럼+크림</h4>
-              <p>마스크팩+샘플까지♥</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./img/online_img_6.jpg" alt="online_img_6">
-              <h4>에어리벨벳 #물복딱복</h4>
-              <p>1+1으로 GET!</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="btn-wrap">
-        <button class="on online-btn">1</button>
-        <button class="online-btn">2</button>
-      </div>
-    </div>
-
-    <div class="popular-wrap">
-      <h3>카테고리 별 인기템</h3>
-      <div class="product-wrap">
-        <div class="btn-wrap">
-          <ul>
-            <li class="on popular-btn">베이스</li>
-            <li class="popular-btn">립</li>
-            <li class="popular-btn">아이</li>
-            <li class="popular-btn">치크&컨투어</li>
-            <li class="popular-btn">기초케어</li>
-            <li class="popular-btn">헤어&바디</li>
-          </ul>
-        </div>
-        <ul class="product-list base on">
-          <li><a href="#">
-            <img src="./img/category_base_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
-            <p class="info">#런칭한달만에 #베스트 #퍼프증정까지!</p>
-            <p class="title">킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증</p>
-            <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
-            <p class="review">리뷰 734<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-            <button class="btn best">BEST</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_base_2.jpg" alt="킬커버 파운웨어 파운데이션">
-            <p class="info">#찰떡궁합 #스파츌라 #한정수량증정!</p>
-            <p class="title">킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
-            <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+            <img src="./img/sub_clio_bestseller_2.jpg" alt="프로 아이팔레트">
+            <p class="info">#한정컬러 #감각적인 #컬러조합</p>
+            <p class="title">[클리오][노스탠다드 컬렉션] 프로 아이팔레트 [증정] 노스탠다드 미러</p>
+            <p class="cost"><span class="sale">38%</span> 19,800원 <span class="original">32,000</span></p>
             <p class="review">리뷰 26<span class="dawn">새벽배송</span></p>
             <button class="btn new">NEW</button>
             <button class="btn gift">사은품</button>
           </a></li>
           <li><a href="#">
-            <img src="./img/category_base_3.jpg" alt="비건웨어 헬시글로우 쿠션">
-            <p class="info">#건강하게 #빛나는 #내피부</p>
-            <p class="title">[클리오] 비건웨어 헬시글로우 쿠션 기획 (본품+리필구성)</p>
-            <p class="cost"><span class="sale">35%</span> 29,250원 <span class="original">45,000</span></p>
-            <p class="review">리뷰 29<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_base_4.jpg" alt="킬커버 진정쿠션 기획세트">
-            <p class="info">#성분하나하나 #신경쓴 #진정쿠션</p>
-            <p class="title">[클리오] 킬커버 진정쿠션 기획세트 [본품+리필구성]</p>
-            <p class="cost"><span class="sale">30%</span> 22,400원 <span class="original">32,000</span></p>
-            <p class="review">리뷰 232<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <a href="#" class="more">전체보기<i class="fa-solid fa-chevron-right"></i></a>
-        </ul>
-        <ul class="product-list lip">
-          <li><a href="#">
-            <img src="./img/category_lip_1.jpg" alt="워터 블러틴트">
-            <p class="info">#6,7,8호 #가을무드 #신상컬러출시!</p>
-            <p class="title">[페리페라] [NEW 컬러/1+1] 심플레인 워터 블러틴트 [증정] 워터풀네일(랜덤)</p>
-            <p class="cost"><span class="sale">35%</span> 15,600원 <span class="original">24,000</span></p>
-            <p class="review">리뷰 438<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-            <button class="btn gift">사은품</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_lip_2.jpg" alt="잉크 무드 매트틴트">
-            <p class="info">#밀착력은잡고 #더예뻐진 #블러보정</p>
-            <p class="title">[페리페라] [NEW/도토리컬렉션] 잉크 무드 매트틴트</p>
-            <p class="cost"><span class="sale">20%</span> 8,000원 <span class="original">10,000</span></p>
-            <p class="review">리뷰 364<span class="dawn">새벽배송</span></p>
+            <img src="./img/sub_clio_bestseller_3.jpg" alt="펜슬라이너">
+            <p class="info">#번짐없는 #아이라인 #입소문템</p>
+            <p class="title">[클리오][1+1] 샤프 쏘 심플 펜슬라이너</p>
+            <p class="cost"><span class="sale">35%</span> 13,000원 <span class="original">20,000</span></p>
+            <p class="review">리뷰 4,114<span class="dawn">새벽배송</span></p>
             <button class="btn best">BEST</button>
+            <button class="btn plus">1+1</button>
           </a></li>
           <li><a href="#">
-            <img src="./img/category_lip_3.jpg" alt="쉬폰 블러 틴트">
-            <p class="info">#가을 #신상컬러 #7,8호출시!</p>
-            <p class="title">[클리오] [NEW 컬러] 쉬폰 블러 틴트</p>
-            <p class="cost"><span class="sale">30%</span> 12,600원 <span class="original">18,000</span></p>
-            <p class="review">리뷰 167<span class="dawn">새벽배송</span></p>
+            <img src="./img/sub_clio_bestseller_4.jpg" alt="듀이 시럽 틴트">
+            <p class="info">#한정컬러 #여리여리 #물막컬러</p>
+            <p class="title">[클리오][노스탠다드 컬렉션] 듀이 시럽 틴트</p>
+            <p class="cost"><span class="sale">40%</span> 10,800원 <span class="original">18,000</span></p>
+            <p class="review">리뷰 43<span class="dawn">새벽배송</span></p>
             <button class="btn new">NEW</button>
           </a></li>
-          <li><a href="#">
-            <img src="./img/category_lip_4.jpg" alt="잉크 더 벨벳">
-            <p class="info">#신상컬러출시 #벨벳립완성 #인생템</p>
-            <p class="title">[페리페라] [NEW 컬러] 잉크 더 벨벳</p>
-            <p class="cost"><span class="sale">20%</span> 7,200원 <span class="original">9,000</span></p>
-            <p class="review">리뷰 1,691<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-            <button class="btn best">BEST</button>
-          </a></li>
-          <a href="#" class="more">전체보기<i class="fa-solid fa-chevron-right"></i></a>
-        </ul>
-        <ul class="product-list eye">
-          <li><a href="#">
-            <img src="./img/category_eye_1.jpg" alt="아이 팔레트">
-            <p class="info">#빈티지니팅 #컬러무드 #신상컬러출시!</p>
-            <p class="title">[페리페라] [NEW 컬러] 심플레인 아이 팔레트 [증정] 워터풀네일(랜덤)</p>
-            <p class="cost"><span class="sale">42%</span> 13,900원 <span class="original">24,000</span></p>
-            <p class="review">리뷰 257<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-            <button class="btn best">BEST</button>
-            <button class="btn gift">사은품</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_eye_2.jpg" alt="팔레트+브러쉬">
-            <p class="info">#하나로 #음영부터 #쉐딩,블러셔까지!</p>
-            <p class="title">[클리오] [NEW] 쉐이드 앤 섀도우 팔레트+브러쉬 기획세트</p>
-            <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
-            <p class="review">리뷰 144<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_eye_3.jpg" alt="멀티 팔레트">
-            <p class="info">#올댓가을 #팔레트하나로 #세상그윽</p>
-            <p class="title">[에이블랙] [NEW 9,10호 출시!] 글램체인지 멀티 팔레트</p>
-            <p class="cost"><span class="sale">34%</span> 19,900원 <span class="original">30,000</span></p>
-            <p class="review">리뷰 1,810<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-            <button class="btn best">BEST</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_eye_4.jpg" alt="래쉬앰플">
-            <p class="info">#튼튼래쉬에 #영양한겹 #저자극케어</p>
-            <p class="title">[페리페라] 심플레인 래쉬앰플 (속눈썹 영양</p>
-            <p class="cost"><span class="sale">32%</span> 9,500원 <span class="original">14,000</span></p>
-            <p class="review">리뷰 213<span class="dawn">새벽배송</span></p>
-            <button class="btn gift">GIFT</button>
-          </a></li>
-          <a href="#" class="more">전체보기<i class="fa-solid fa-chevron-right"></i></a>
-        </ul>
-        <ul class="product-list cheek">
-          <li><a href="#">
-            <img src="./img/category_cheek_1.jpg" alt="선샤인치크">
-            <p class="info">#가을맛 #도토리컬렉션 #16,17호추가!</p>
-            <p class="title">[페리페라] [NEW/도토리컬렉션] 맑게 물든 선샤인치크</p>
-            <p class="cost"><span class="sale">20%</span> 5,600원 <span class="original">7,000</span></p>
-            <p class="review">리뷰 1,654<span class="dawn">새벽배송</span></p>
-            <button class="btn best">BEST</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_cheek_2.jpg" alt="잉크 브이 쉐딩">
-            <p class="info">#또렷연출 #입소문 #쉐딩</p>
-            <p class="title">[페리페라] 잉크 브이 쉐딩</p>
-            <p class="cost"><span class="sale">20%</span> 9,600원 <span class="original">12,000</span></p>
-            <p class="review">리뷰 1,270<span class="dawn">새벽배송</span></p>
-            <button class="btn best">BEST</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_cheek_3.jpg" alt="하이라이">
-            <p class="info">#뭉침없이 #영한광채 #브러쉬증정구성</p>
-            <p class="title">[페리페라] 맑게 물든 글로리 하이라이터 [본품+팬브러쉬 구성]</p>
-            <p class="cost"><span class="sale">30%</span> 9,800원 <span class="original">14,000</span></p>
-            <p class="review">리뷰 178<span class="dawn">새벽배송</span></p>
-            <button class="btn gift">사은품</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_cheek_4.jpg" alt="플래쉬 팔레트">
-            <p class="info">#맑음영롱 #분위기조장 #입체페이스완성</p>
-            <p class="title">[트윙클팝] 페이스 플래쉬 팔레트</p>
-            <p class="cost"><span class="sale">39%</span> 7,900원 <span class="original">12,900</span></p>
-            <p class="review">리뷰 51<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <a href="#" class="more">전체보기<i class="fa-solid fa-chevron-right"></i></a>
-        </ul>
-        <ul class="product-list care">
-          <li><a href="#">
-            <img src="./img/category_care_1.jpg" alt="잡티케어 세럼">
-            <p class="info">#베스트셀러 #잡티세럼 #업그레이드</p>
-            <p class="title">[구달] 청귤 비타C 잡티케어 세럼 30ml [증정] 잡티케어 세럼 10ml</p>
-            <p class="cost"><span class="sale">20%</span> 20,800원 <span class="original">26,000</span></p>
-            <p class="review">리뷰 50<span class="dawn">새벽배송</span></p>
-            <button class="btn best">BEST</button>
-            <button class="btn gift">사은품</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_care_2.jpg" alt="진정 수분 선크림">
-            <p class="info">#리뉴얼 #1+1 #촉촉가벼운선크림</p>
-            <p class="title">[구달] [NEW] 맑은 어성초 진정 수분 선크림 1+1 기획 (22AD)</p>
-            <p class="cost"><span class="sale">10%</span> 16,200원 <span class="original">18,000</span></p>
-            <p class="review">리뷰 321<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_care_3.jpg" alt="어성초 진정 마스크">
-            <p class="info">#어성초가득담은 #시트한장으로 #진정케어</p>
-            <p class="title">[구달] [1+1] 맑은 어성초 진정 마스크 (22AD)</p>
-            <p class="cost"><span class="sale">50%</span> 3,000원 <span class="original">6,000</span></p>
-            <p class="review">리뷰 122<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_care_4.jpg" alt="수분 픽업 마스크">
-            <p class="info">#뽑아쓰는 #쿨링&수분케어 #마스크팩</p>
-            <p class="title">[더마토리] 프로 히알샷 수분 픽업 마스크</p>
-            <p class="cost"><span class="sale">45%</span> 13,200원 <span class="original">24,000</span></p>
-            <p class="review">리뷰 313<span class="dawn">새벽배송</span></p>
-            <button class="btn best">BEST</button>
-          </a></li>
-          <a href="#" class="more">전체보기<i class="fa-solid fa-chevron-right"></i></a>
-        </ul>
-        <ul class="product-list hair">
-          <li><a href="#">
-            <img src="./img/category_hair_1.jpg" alt="앰플 트리트먼트">
-            <p class="info">#손상모발용 #칙!뿌리면끝 #오일증정</p>
-            <p class="title">[힐링버드] 노워시 앰플 트리트먼트 기획세트 (본품 200ml+헤어오일리치 31ml)</p>
-            <p class="cost"><span class="sale">30%</span> 16,800원 <span class="original">24,000</span></p>
-            <p class="review">리뷰 2,076<span class="dawn">새벽배송</span></p>
-            <button class="btn best">BEST</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_hair_2.jpg" alt="">
-            <p class="info">#집에서도 #간편하게 #살롱케어</p>
-            <p class="title">[힐링버드] [NEW] 비포 샴푸 퍼스트 헤어팩 330ml</p>
-            <p class="cost"><span class="sale">35%</span> 19,300원 <span class="original">29,800</span></p>
-            <p class="review">리뷰 33<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_hair_3.jpg" alt="TYPE No. 핸드크림">
-            <p class="info">#선물추천 #기프트박스 #한정수량</p>
-            <p class="title">[타입넘버] TYPE No. 핸드크림 (3종 중 택1) [한정수량 증정] 선물상자</p>
-            <p class="cost"><span class="sale">10%</span> 14,400원 <span class="original">16,000</span></p>
-            <p class="review">리뷰 5<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-            <button class="btn gift">사은품</button>
-          </a></li>
-          <li><a href="#">
-            <img src="./img/category_hair_4.jpg" alt="핸드케어 세트">
-            <p class="info">#코끝을스치는 #다채로운향기 #핸드케어SET</p>
-            <p class="title">[타입넘버] 핸드케어 세트 [핸드크림*2ea+핸드겔*1ea 구성]</p>
-            <p class="cost"><span class="sale">10%</span> 25,200원 <span class="original">28,000</span></p>
-            <p class="review">리뷰 0<span class="dawn">새벽배송</span></p>
-            <button class="btn new">NEW</button>
-          </a></li>
-          <a href="#" class="more">전체보기<i class="fa-solid fa-chevron-right"></i></a>
         </ul>
       </div>
     </div>
 
-    <div class="comment-wrap">
-      <h3>댓글달고 신상 GET!</h3>
-      <div class="img-wrap">
-        <h4>신제품을 가장 먼저 만나볼 기회♥</h4>
-        <button class="apply">신청하러 가기></button>
-      </div>
-    </div>
-
-    <div class="tv-wrap">
-      <h3>클클 TV</h3>
-      <div class="inner">
-        <div class="tv-left"></div>
-        <div class="tv-right">
-          <div class="tv-1"></div>
-          <div class="tv-2"></div>
-          <div class="tv-3"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="review-wrap">
-      <div class="review-top">
-        <h3>이달의 베스트 리뷰</h3>
-        <div class="review-inner">
-          <ul class="review-list">
-            <li>
-              <a href="#">
-                <div class="img-box">
-                  <img src="./img/review_img_1.jpg" alt="review_img_1">
-                </div>
-                <div class="txt-box">
-                  <h4>가을 무드 충만한 팔레트</h4>
-                  <p>페리페라 심플레인 아이 팔레트 03 니팅 코랄 peripera simplain eye pallte 03 knitting coral 가을 분위기를 물씬 풍기는 아이 팔레트 가져왔어요
-                  디자인도 패키지도 컬러도 질감도 다 예쁜</p>
-                  <div class="item-box">
-                    <div class="item-img">
-                      <img src="./img/review_sub_img_1.jpg" alt="review img1">
-                    </div>
-                    <div class="item-txt">
-                      <h5>[NEW 컬러] 심플레인 아이 팔레트</h5>
-                      <p class="cost"><span class="sale">42%</span> 13,900원 <span class="original">24,000</span></p>
-                    </div>
-                    <div class="item-btn">
-                      <button><i class="fa-solid fa-cart-arrow-down"></i></button>
-                      <button><i class="fa-regular fa-heart"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="img-box">
-                  <img src="./img/review_img_2.jpg" alt="review_img_2">
-                </div>
-                <div class="txt-box">
-                  <h4>컬러 정말 예뻐요♥</h4>
-                  <p>뷰티 테스터 당첨을 통해 제품 사용해 보게 됐어요. 니트 코랄 컬렉션이라 그런건지 일단 제품 용기 디자인이 심플합니다.</p>
-                  <div class="item-box">
-                    <div class="item-img">
-                      <img src="./img/review_sub_img_2.jpg" alt="review img2">
-                    </div>
-                    <div class="item-txt">
-                      <h5>[NEW 컬러/1+1] 심플레인 워터</h5>
-                      <p class="cost"><span class="sale">35%</span> 15,600원 <span class="original">24,000</span></p>
-                    </div>
-                    <div class="item-btn">
-                      <button><i class="fa-solid fa-cart-arrow-down"></i></button>
-                      <button><i class="fa-regular fa-heart"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="img-box">
-                  <img src="./img/review_img_3.jpg" alt="review_img_3">
-                </div>
-                <div class="txt-box">
-                  <h4>킬커버 더뉴쿠션 좋아용!!</h4>
-                  <p>얇고 촉촉하게 발리는데 커버가 잘되네요?! 건조하지 않고 지속력도 오래가서 넘 좋아요..</p>
-                  <div class="item-box">
-                    <div class="item-img">
-                      <img src="./img/review_sub_img_3.jpg" alt="review img3">
-                    </div>
-                    <div class="item-txt">
-                      <h5>킬커버 파운웨어 더뉴쿠션 기획 (본품</h5>
-                      <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
-                    </div>
-                    <div class="item-btn">
-                      <button><i class="fa-solid fa-cart-arrow-down"></i></button>
-                      <button><i class="fa-regular fa-heart"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="review-bottom">
-        <div class="review-slide">
-          <button class="review-prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-          <div class="slide-wrap">
+    <div class="best-new-wrap all">
+      <div class="title-wrap">
+        <h4>All</h4>
+        <ul class="menu-wrap">
+          <li class="on"><a href="#">All</a></li>
+          <li><a href="#">베이스/선</a></li>
+          <li><a href="#">립</a></li>
+          <li><a href="#">아이</a></li>
+          <li><a href="#">치크&하이라이터</a></li>
+          <li><a href="#">클렌징</a></li>
+          <li><a href="#">네일&ACC</a></li>
+        </ul>
+        <div class="info-wrap">
+          <p>총 75개</p>
+          <div class="sort-wrap">
+            <a href="#">인기순</a>
             <ul>
-              <li id="review-last">
-                <a href="#">
-                  <img src="./img/review_bottom_img_4.jpg" alt="review img">
-                  <div class="txtbox">
-                    <h5 class="title">굿굿</h5>
-                    <p class="txt">펜슬 아이라이너 잘 안쓰는데 많은 사람들이 찬양을 하길래 한번 사봤어요 만족해요
-                      진짜 잘 안지워짐 ㅋ?ㅋ 적립금으로 엄청 싸게 샀고, 클리오 디자인 너무 맘에들어요!!
-                    </p>
-                    <span class="user-id">jkl***</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./img/review_bottom_img_1.jpg" alt="review img">
-                  <div class="txtbox">
-                    <h5 class="title">발색굳 가성비굳 다른색도?</h5>
-                    <p class="txt">이 가을에 알맞은 색감 발색이 가을가을하게 하네요 색표현도 다양하게 할 수 있어 피치톤도
-                      구매하고 싶게 하네요 거기에 가성비도 좋고요 참! 가루 날림도 거의 없다고 봐요
-                    </p>
-                    <span class="user-id">abc***</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./img/review_bottom_img_2.jpg" alt="review img">
-                  <div class="txtbox">
-                    <h5 class="title">겨쿨브라이트 32호</h5>
-                    <p class="txt">제발 사세여 나심저격 단종되어서 질질 짜다가 겨쿨브라이트 찰떡립이 소량입고라길래 사봤는데 진짜 찰떡..
-                      이거 온고잉 해주세요 아니 나심저격도 단정되어서 이제 저 바를거 없었는데
-                    </p>
-                    <span class="user-id">def***</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./img/review_bottom_img_3.jpg" alt="review img">
-                  <div class="txtbox">
-                    <h5 class="title">커버력 대박적!</h5>
-                    <p class="txt">저는 얼굴에 잡티가 있어서 피부 표현할 때 커버력이 필수인데 이 제품은
-                      가벼우면서도 커버가 잘되서 넘 좋아요! 왜 이제서야 쓰게 됐는지~~~
-                    </p>
-                    <span class="user-id">ghi***</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./img/review_bottom_img_4.jpg" alt="review img">
-                  <div class="txtbox">
-                    <h5 class="title">굿굿</h5>
-                    <p class="txt">펜슬 아이라이너 잘 안쓰는데 많은 사람들이 찬양을 하길래 한번 사봤어요 만족해요
-                      진짜 잘 안지워짐 ㅋ?ㅋ 적립금으로 엄청 싸게 샀고, 클리오 디자인 너무 맘에들어요!!
-                    </p>
-                    <span class="user-id">jkl***</span>
-                  </div>
-                </a>
-              </li>
-              <li id="review-first">
-                <a href="#">
-                  <img src="./img/review_bottom_img_1.jpg" alt="review img">
-                  <div class="txtbox">
-                    <h5 class="title">발색굳 가성비굳 다른색도?</h5>
-                    <p class="txt">이 가을에 알맞은 색감 발색이 가을가을하게 하네요 색표현도 다양하게 할 수 있어 피치톤도
-                      구매하고 싶게 하네요 거기에 가성비도 좋고요 참! 가루 날림도 거의 없다고 봐요
-                    </p>
-                    <span class="user-id">abc***</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./img/review_bottom_img_2.jpg" alt="review img">
-                  <div class="txtbox">
-                    <h5 class="title">겨쿨브라이트 32호</h5>
-                    <p class="txt">제발 사세여 나심저격 단종되어서 질질 짜다가 겨쿨브라이트 찰떡립이 소량입고라길래 사봤는데 진짜 찰떡..
-                      이거 온고잉 해주세요 아니 나심저격도 단정되어서 이제 저 바를거 없었는데
-                    </p>
-                    <span class="user-id">def***</span>
-                  </div>
-                </a>
-              </li>
+              <li><a href="#!">인기순</a></li>
+              <li><a href="#!">최신순</a></li>
+              <li><a href="#!">많은리뷰순</a></li>
+              <li><a href="#!">리뷰평점순</a></li>
+              <li><a href="#!">낮은가격순</a></li>
+              <li><a href="#!">높은가격순</a></li>
             </ul>
           </div>
-          <button class="review-next-btn"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
-        <a href="#" class="more">더보기<i class="fa-solid fa-chevron-right"></i></a>
       </div>
-    </div>
-
-    <div class="insta-wrap">
-      <h3>INSTAGRAM</h3>
-      <div class="swiper mySwiper insta-slide">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide insta-1"></div>
-          <div class="swiper-slide insta-2"></div>
-          <div class="swiper-slide insta-3"></div>
-          <div class="swiper-slide insta-4"></div>
-          <div class="swiper-slide insta-5"></div>
-          <div class="swiper-slide insta-6"></div>
-          <div class="swiper-slide insta-7"></div>
-          <div class="swiper-slide insta-8"></div>
-          <div class="swiper-slide insta-9"></div>
-          <div class="swiper-slide insta-10"></div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-
-      <div class="m-insta-box">
-        <div class="insta-1"></div>
-        <div class="insta-2"></div>
-        <div class="insta-3"></div>
-        <div class="insta-4"></div>
-        <div class="insta-5"></div>
-        <div class="insta-6"></div>
-        <div class="insta-7"></div>
-        <div class="insta-8"></div>
-        <div class="insta-9"></div>
+      <div class="product-wrap">
+        <ul class="product-list best">
+          <li>
+            <a href="#">
+              <img src="./img/sub_list_clio_1.jpg" alt="킬커버 파운웨어 더뉴쿠션">
+              <p class="info">#런칭한달만에 #베스트 #퍼프증정까지!</p>
+              <p class="title">[클리오]킬커버 파운웨어 더뉴쿠션 기획 (본품+리필) [한정증정] 쿠션퍼프 3p</p>
+              <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+              <p class="review">리뷰 734<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+              <button class="btn best">BEST</button>
+              <button class="btn gift">사은품</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_bestseller_2.jpg" alt="프로 아이팔레트">
+              <p class="info">#한정컬러 #감각적인 #컬러조합</p>
+              <p class="title">[클리오][노스탠다드 컬렉션] 프로 아이팔레트 [증정] 노스탠다드 미러</p>
+              <p class="cost"><span class="sale">38%</span> 19,800원 <span class="original">32,000</span></p>
+              <p class="review">리뷰 26<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+              <button class="btn gift">사은품</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_bestseller_3.jpg" alt="펜슬라이너">
+              <p class="info">#번짐없는 #아이라인 #입소문템</p>
+              <p class="title">[클리오][1+1] 샤프 쏘 심플 펜슬라이너</p>
+              <p class="cost"><span class="sale">35%</span> 13,000원 <span class="original">20,000</span></p>
+              <p class="review">리뷰 4,114<span class="dawn">새벽배송</span></p>
+              <button class="btn best">BEST</button>
+              <button class="btn plus">1+1</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_bestseller_4.jpg" alt="듀이 시럽 틴트">
+              <p class="info">#한정컬러 #여리여리 #물막컬러</p>
+              <p class="title">[클리오][노스탠다드 컬렉션] 듀이 시럽 틴트</p>
+              <p class="cost"><span class="sale">40%</span> 10,800원 <span class="original">18,000</span></p>
+              <p class="review">리뷰 43<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_list_clio_2.jpg" alt="킬커버 파운웨어 파운데이션">
+              <p class="info">#찰떡궁합 #스파츌라 #한정수량증정!</p>
+              <p class="title">킬커버 파운웨어 파운데이션 (38g/단품) [한정증정]</p>
+              <p class="cost"><span class="sale">30%</span> 23,800원 <span class="original">34,000</span></p>
+              <p class="review">리뷰 26<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_list_clio_3.jpg" alt="데일리 뽀글이 파우치">
+              <p class="info">#수납력갑 #도톰폭신 #감성컬러</p>
+              <p class="title">[NEW] 데일리 뽀글이 파우치</p>
+              <p class="cost"><span class="sale">20%</span> 9,600원 <span class="original">12,000</span></p>
+              <p class="review">리뷰 6<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/category_base_3.jpg" alt="비건웨어 헬시글로우 쿠션">
+              <p class="info">#건강하게 #빛나는 #내피부</p>
+              <p class="title">[클리오] 비건웨어 헬시글로우 쿠션 기획 (본품+리필구성)</p>
+              <p class="cost"><span class="sale">35%</span> 29,250원 <span class="original">45,000</span></p>
+              <p class="review">리뷰 29<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/category_base_4.jpg" alt="킬커버 진정쿠션 기획세트">
+              <p class="info">#성분하나하나 #신경쓴 #진정쿠션</p>
+              <p class="title">[클리오] 킬커버 진정쿠션 기획세트 [본품+리필구성]</p>
+              <p class="cost"><span class="sale">30%</span> 22,400원 <span class="original">32,000</span></p>
+              <p class="review">리뷰 232<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_all_1.jpg" alt="킬래쉬 마스카라">
+              <p class="info">#완벽픽싱 #1+1구성 #볼륨&컬링</p>
+              <p class="title">[클리오] 킬래쉬 마스카라 1+1 기획세트</p>
+              <p class="cost"><span class="sale">5%</span> 17,100원 <span class="original">18,000</span></p>
+              <p class="review">리뷰 2,351<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+              <button class="btn best">BEST</button>
+              <button class="btn plus">1+1</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_all_2.jpg" alt="미니팔레트">
+              <p class="info">#꿀조합 #쉬운음영 #미니팔레트</p>
+              <p class="title">[클리오] 프로 아이 팔레트 미니</p>
+              <p class="cost"><span class="sale">55%</span> 9,900원 <span class="original">22,000</span></p>
+              <p class="review">리뷰 218<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_all_3.jpg" alt="쿠션 퍼프">
+              <p class="info">#클리오만의 #커브쉐입 #퍼프</p>
+              <p class="title">[클리오] 킬커버 더뉴 파운웨어 쿠션 퍼프 1P</p>
+              <p class="cost"><span class="sale">15%</span> 1,700원 <span class="original">2,000</span></p>
+              <p class="review">리뷰 17<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_all_4.jpg" alt="쉬폰 블러 틴트">
+              <p class="info">#가을 #신상컬러 #7,8호출시!</p>
+              <p class="title">[클리오] [NEW 컬러] 쉬폰 블러 틴트</p>
+              <p class="cost"><span class="sale">35%</span> 11,700원 <span class="original">18,000</span></p>
+              <p class="review">리뷰 181<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_all_5.jpg" alt="메이크업 스폰지">
+              <p class="info">#6PCS구성 #수분광채 #스펀지</p>
+              <p class="title">[클리오] 하이드로 메이크업 스폰지 (대)</p>
+              <p class="cost"><span class="sale">30%</span> 6,300원 <span class="original">9,000</span></p>
+              <p class="review">리뷰 408<span class="dawn">새벽배송</span></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_all_6.jpg" alt="쉬폰 무드 립">
+              <p class="info">#입술위 #스며드는 #보송블러립</p>
+              <p class="title">[클리오] [NEW] 쉬폰 무드 립</p>
+              <p class="cost"><span class="sale">35%</span> 14,300원 <span class="original">22,000</span></p>
+              <p class="review">리뷰 46<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_all_7.jpg" alt="쏘 심플 워터프루프 펜슬 라이너">
+              <p class="info">#클리오 #스테디셀러 #아이라이너</p>
+              <p class="title">[클리오] 샤프 쏘 심플 워터프루프 펜슬 라이너</p>
+              <p class="cost"><span class="sale">30%</span> 7,000원 <span class="original">10,000</span></p>
+              <p class="review">리뷰 2,519<span class="dawn">새벽배송</span></p>
+              <button class="btn best">BEST</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_all_8.jpg" alt="에어리핏 컨실러">
+              <p class="info">#국소부위에 #콕콕 #슬림컨실러</p>
+              <p class="title">[클리오] 킬커버 에어리핏 컨실러</p>
+              <p class="cost"><span class="sale">30%</span> 8,400원 <span class="original">12,000</span></p>
+              <p class="review">리뷰 306<span class="dawn">새벽배송</span></p>
+              <button class="btn best">BEST</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_all_9.jpg" alt="뉴매트 파운데이션">
+              <p class="info">#요즘매트 #편한매트 #깃털커버</p>
+              <p class="title">[클리오] 킬커버 뉴매트 파운데이션 기획 [본품+브러쉬 구성]</p>
+              <p class="cost"><span class="sale">30%</span> 22,400원 <span class="original">32,000</span></p>
+              <p class="review">리뷰 278<span class="dawn">새벽배송</span></p>
+              <button class="btn best">BEST</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_all_10.jpg" alt="컬러 브로우 래커">
+              <p class="info">#헤어컬러맞춤 #한올한올 #결고정</p>
+              <p class="title">[클리오] 킬브로우 컬러 브로우 래커</p>
+              <p class="cost"><span class="sale">30%</span> 9,800원 <span class="original">14,000</span></p>
+              <p class="review">리뷰 546<span class="dawn">새벽배송</span></p>
+              <button class="btn best">BEST</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_all_11.jpg" alt="마스카라 리무버">
+              <p class="info">#간편하게 #마스카라 #순삭</p>
+              <p class="title">[클리오] 킬래쉬 마스카라 리무버</p>
+              <p class="cost"><span class="sale">30%</span> 8,400원 <span class="original">12,000</span></p>
+              <p class="review">리뷰 756<span class="dawn">새벽배송</span></p>
+              <button class="btn best">BEST</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/sub_clio_all_12.jpg" alt="픽서쿠션">
+              <p class="info">#찐인기 #픽서쿠션 #리필15g</p>
+              <p class="title">[클리오] 킬커버 픽서쿠션 리필</p>
+              <p class="cost"><span class="sale">30%</span> 10,500원 <span class="original">15,000</span></p>
+              <p class="review">리뷰 118<span class="dawn">새벽배송</span></p>
+            </a>
+          </li>
+          <li class="last">
+            <a href="#">
+              <img src="./img/sub_clio_all_13.jpg" alt="수퍼프루프 펜 라이너">
+              <p class="info">#한번에쓱 #번짐걱정 #NONO!</p>
+              <p class="title">[클리오] [1+1] 수퍼프루프 펜 라이너</p>
+              <p class="cost"><span class="sale">33%</span> 19,900원 <span class="original">30,000</span></p>
+              <p class="review">리뷰 0<span class="dawn">새벽배송</span></p>
+              <button class="btn plus">1+1</button>
+            </a>
+          </li>
+          <li class="last">
+            <a href="#">
+              <img src="./img/sub_clio_all_14.jpg" alt="메이크업 픽서">
+              <p class="info">#안개분사 #첫메이크업을 #오~래도록!</p>
+              <p class="title">[클리오] 스테이 퍼펙트 메이크업 픽서</p>
+              <p class="cost"><span class="sale">30%</span> 11,200원 <span class="original">16,000</span></p>
+              <p class="review">리뷰 31<span class="dawn">새벽배송</span></p>
+            </a>
+          </li>
+          <li class="last">
+            <a href="#">
+              <img src="./img/sub_clio_all_15.jpg" alt="듀이 시럽 틴트">
+              <p class="info">#은은하고맑게 #유리알 #광택틴트</p>
+              <p class="title">[클리오] 듀이 시럽 틴트</p>
+              <p class="cost"><span class="sale">30%</span> 12,600원 <span class="original">18,000</span></p>
+              <p class="review">리뷰 258<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+            </a>
+          </li>
+          <li class="last">
+            <a href="#">
+              <img src="./img/sub_clio_all_16.jpg" alt="킬커버 진정쿠션">
+              <p class="info">#성분하나하나 #신경쓴 #진정쿠션</p>
+              <p class="title">[클리오] 킬커버 진정쿠션 기획세트 [본품+리필구성]</p>
+              <p class="cost"><span class="sale">30%</span> 22,400원 <span class="original">32,000</span></p>
+              <p class="review">리뷰 236<span class="dawn">새벽배송</span></p>
+              <button class="btn new">NEW</button>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -1699,9 +1315,38 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 8,
-      spaceBetween: 20,
+      slidesPerView: 1,
+      spaceBetween: 0,
       // touchRatio: 0,
+      autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+      },
+      loop: true,
+      pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    let sw = 0;
+    $(".swiper-button-pause").click(function(){
+      if(sw == 0){
+        swiper.autoplay.stop();
+        sw = 1;
+      }else {
+        swiper.autoplay.start();
+        sw = 0;
+      }
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+      slidesPerView: 1,
+      spaceBetween: 0,
       loop: true,
       navigation: {
         nextEl: ".swiper-button-next",

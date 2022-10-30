@@ -1,5 +1,31 @@
 @import '_variable';
 
+@media screen and (max-width:1200px) {
+    .main-wrap {
+        .swiper {
+            .swiper-slide {
+                .title-box {
+                    h4 {
+                        font-size: 32px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-slide-wrap {
+        .swiper-slide {
+            .title-box {
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width:1024px){
     //cart.html
@@ -130,6 +156,207 @@
                     line-height: 40px;
                     font-size: 14px;
                 }
+            }
+        }
+    }
+
+    //sub_clio.html
+    .main-wrap {
+        .swiper {
+            .swiper-slide {
+                .title-box {
+                    h4 {
+                        font-size: 28px;
+                    }
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .brand-wrap {
+        display: flex;
+    }
+
+    .banner-slide-wrap {
+        margin-top: 0;
+        .swiper-slide {
+            .title-box {
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .main-wrap {
+        .m-title {
+            display: block;
+        }
+        .logo {
+            display: none;
+        }
+        .swiper {
+            .swiper-slide {
+                &.white {
+                    img {
+                        content: url('../img/sub_main_1_clio_m.jpg');
+                    }
+                }
+                &.black {
+                    img {
+                        content: url('../img/sub_main_2_clio_m.jpg');
+                    }
+                }
+                .title-box {
+                    h4 {
+                        font-size: 22px;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .btn-wrap {
+                width: 70px;
+                height: 25px;
+                left: auto;
+                right: -20px;
+                .swiper-button-next,
+                .swiper-button-prev {
+                    display: none;
+                }
+                .swiper-pagination-fraction {
+                    left: 15px;
+                    top: 5px;
+                    font-size: 12px;
+                }
+                .swiper-pagination-current,
+                .swiper-pagination-total {
+                    font-size: 12px;
+                }
+                .swiper-button-pause {
+                    position: absolute;
+                    top: 3px;
+                    right: 10px;
+                    cursor: pointer;
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-slide-wrap {
+        margin-top: 0;
+        .swiper-slide {
+            .title-box {
+                left: 25px;
+                p {
+                    font-size: 18px;
+                    line-height: 1.5;
+                }
+            }
+            &.white {
+                img {
+                    content: url('../img/sub_slide_1_clio_m.jpg');
+                }
+            }
+            &.black1 {
+                img {
+                    content: url('../img/sub_slide_2_clio_m.jpg');
+                }
+            }
+            &.black2 {
+                img {
+                    content: url('../img/sub_slide_3_clio_m.jpg');
+                }
+            }
+            &.black3 {
+                img {
+                    content: url('../img/sub_slide_4_clio_m.jpg');
+                }
+            }
+        }
+        .swiper-button-next {
+            right: 11px;
+            width: 22px;
+            height: 22px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .best-seller {
+        h3 {
+            font-size: 24px;
+        }
+        .product-wrap {
+            .product-list {
+                padding-bottom: 0;
+                > li {
+                    &:nth-child(3),
+                    &:nth-child(4) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    .all {
+        .title-wrap {
+            h4 {
+                font-size: 16px;
+            }
+            .menu-wrap {
+                li {
+                    margin-right: 10px;
+                    a {
+                        font-size: 13px;
+                    }
+                    &.on {
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .info-wrap {
+
+                .sort-wrap {
+                    position: relative;
+                    width: 85px;
+                    line-height: 24px;
+                    > a { 
+                        background-position: 60px center;
+                        background-size: 12px;
+                        padding: 0 10px;
+                        font-size: 12px;
+                    }
+                    ul {
+                        top: 24px;
+                        padding: 10px;
+                        li {
+                            a {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .product-wrap {
+            margin-top: 0;
+            .product-list {
+                margin-top: 0;
             }
         }
     }

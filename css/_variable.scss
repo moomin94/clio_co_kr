@@ -71,6 +71,9 @@ $point-color3: #d477c8;
           &.gift {
             background-color: $point-color3;
           }
+          &.plus {
+            background-color: red;
+          }
       }
 
   }
