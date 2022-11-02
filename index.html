@@ -1627,7 +1627,7 @@
         <div class="swiper-button-prev"></div>
       </div>
 
-      <div class="m-insta-box">
+      <!-- <div class="m-insta-box">
         <div class="insta-1"></div>
         <div class="insta-2"></div>
         <div class="insta-3"></div>
@@ -1637,7 +1637,7 @@
         <div class="insta-7"></div>
         <div class="insta-8"></div>
         <div class="insta-9"></div>
-      </div>
+      </div> -->
     </div>
 
     <footer class="footer-wrap">
@@ -1708,6 +1708,23 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        1200: {
+          slidesPerView: 8,
+          spaceBetween: 40
+        }
+      }
     });
   </script>
 </body>

@@ -1324,6 +1324,7 @@
   top: 45px;
   background-color: #ffffff;
   padding: 5px 0;
+  z-index: 99;
 }
 .footer-wrap .footer-inner .footer-right .option.on {
   display: block;

@@ -57,6 +57,15 @@
       }
     }
   } 
+  .footer-wrap {
+    .footer-inner {
+      .footer-right {
+        .option {
+          top: -238px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width:1240px){
@@ -368,12 +377,12 @@
     h3 {
       margin-bottom: 45px;
     }
-    .insta-slide {
-      display: none;
-    }
-    .m-insta-box  {
-      display: grid;
-    }
+    // .insta-slide {
+    //   display: none;
+    // }
+    // .m-insta-box  {
+    //   display: grid;
+    // }
     
   }
   .footer-wrap {
@@ -411,9 +420,6 @@
       }
       .footer-right {
         width: 17%;
-        .option {
-          top: -238px;
-        }
       }
     }
   }
@@ -783,9 +789,6 @@
       .footer-right {
         margin-top: 20px;
         width: 40%;
-        .option {
-          top: -238px;
-        }
       }
     }
   }
