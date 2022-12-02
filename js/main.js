@@ -1,6 +1,6 @@
 'use strict';
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
 
     // Main img area
     const slideBox = document.querySelector('.main-img-wrap');
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(){
     slideBox.style.transform = 'translateX(' + -size * counter + '%)';
 
     // slide 오른쪽으로 이동
-    function moveSlide(){
+    function moveSlide() {
         if (counter >= slideItem.length - 1) return;
         slideBox.style.transition = "transform 0.4s ease-in-out";
         counter++;
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let autoSlide = setInterval(moveSlide, 3500);
 
     // next 버튼 클릭시 오른쪽으로 이동
-    nextBtn.addEventListener("click", function(){
+    nextBtn.addEventListener("click", function () {
         clearInterval(autoSlide);
         moveSlide();
     });
@@ -49,11 +49,11 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     // play, pause 버튼 클릭시 작동
-    playPauseBtn.addEventListener('click', function(){
-        if(this.className == 'fa-solid fa-pause'){
+    playPauseBtn.addEventListener('click', function () {
+        if (this.className == 'fa-solid fa-pause') {
             this.className = 'fa-solid fa-play';
             clearInterval(autoSlide);
-        }else{
+        } else {
             clearInterval(autoSlide);
             this.className = 'fa-solid fa-pause';
             autoSlide = setInterval(moveSlide, 3500);
@@ -64,9 +64,9 @@ document.addEventListener("DOMContentLoaded", function(){
     // 4번에서 1번, 1번에서 4번 이미지로 자연스럽게 넘어가기
     slideBox.addEventListener("transitionend", function () {
         if (slideItem[counter].id === "last-clone") {
-        slideBox.style.transition = "none";
-        counter = slideItem.length - 2;
-        slideBox.style.transform = "translateX(" + -size * counter + "%)";
+            slideBox.style.transition = "none";
+            counter = slideItem.length - 2;
+            slideBox.style.transform = "translateX(" + -size * counter + "%)";
         }
         if (slideItem[counter].id === "first-clone") {
             slideBox.style.transition = "none";
@@ -80,16 +80,16 @@ document.addEventListener("DOMContentLoaded", function(){
     let hr = document.querySelector('.hr');
     let min = document.querySelector('.min');
     let sec = document.querySelector('.sec');
-    function showTime(){
+    function showTime() {
         let stDate = new Date().getTime();
-        let edDate = new Date('2022-11-06 00:00:00').getTime();
+        let edDate = new Date('2022-12-04 00:00:00').getTime();
         let remainDate = edDate - stDate;
-        let hours = Math.floor(remainDate / (1000*60*60));
-        let minutes = Math.floor((remainDate % (1000*60*60)) / (1000*60));
-        let seconds = Math.floor((remainDate % (1000*60)) / (1000));
-        hr.innerText = String(hours).padStart(2,'0');
-        min.innerText = String(minutes).padStart(2,'0');
-        sec.innerText = String(seconds).padStart(2,'0');
+        let hours = Math.floor(remainDate / (1000 * 60 * 60));
+        let minutes = Math.floor((remainDate % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((remainDate % (1000 * 60)) / (1000));
+        hr.innerText = String(hours).padStart(2, '0');
+        min.innerText = String(minutes).padStart(2, '0');
+        sec.innerText = String(seconds).padStart(2, '0');
     }
     showTime();
     setInterval(showTime, 1000);
@@ -97,9 +97,9 @@ document.addEventListener("DOMContentLoaded", function(){
     // Best & New product area
     const productBtn = document.querySelectorAll('.product-btn');
     const productList = document.querySelectorAll('.product-list');
-    for(let i = 0; i < productBtn.length; i++){
-        productBtn[i].addEventListener('click',function(){
-            for(let j = 0; j < productBtn.length; j++){
+    for (let i = 0; i < productBtn.length; i++) {
+        productBtn[i].addEventListener('click', function () {
+            for (let j = 0; j < productBtn.length; j++) {
                 productBtn[j].classList.remove('on');
                 productList[j].classList.remove('on');
                 this.classList.add('on');
@@ -111,9 +111,9 @@ document.addEventListener("DOMContentLoaded", function(){
     // Online area
     const onlineBtn = document.querySelectorAll('.online-btn');
     const onlineInner = document.querySelectorAll('.online-inner');
-    for(let i = 0; i < onlineBtn.length; i++){
-        onlineBtn[i].addEventListener('click',function(){
-            for(let j = 0; j < onlineBtn.length; j++){
+    for (let i = 0; i < onlineBtn.length; i++) {
+        onlineBtn[i].addEventListener('click', function () {
+            for (let j = 0; j < onlineBtn.length; j++) {
                 onlineBtn[j].classList.remove('on');
                 onlineInner[j].classList.remove('on');
                 this.classList.add('on');
@@ -125,9 +125,9 @@ document.addEventListener("DOMContentLoaded", function(){
     // Popular product area
     const popularBtn = document.querySelectorAll('.popular-btn');
     const popularList = document.querySelectorAll('.popular-wrap .product-list');
-    for(let i = 0; i < popularBtn.length; i++){
-        popularBtn[i].addEventListener('click',function(){
-            for(let j = 0; j < popularBtn.length; j++){
+    for (let i = 0; i < popularBtn.length; i++) {
+        popularBtn[i].addEventListener('click', function () {
+            for (let j = 0; j < popularBtn.length; j++) {
                 popularBtn[j].classList.remove('on');
                 popularList[j].classList.remove('on');
                 this.classList.add('on');
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function(){
     reviewSlide.style.transform = 'translateX(' + -reviewSize * reviewCount + '%)';
 
     // next 버튼 클릭시 오른쪽으로 이동
-    reviewNext.addEventListener("click", function(){
+    reviewNext.addEventListener("click", function () {
         if (reviewCount > reviewItem.length - 1) return;
         reviewSlide.style.transition = "transform 0.5s ease-in-out";
         reviewCount++;
@@ -166,13 +166,13 @@ document.addEventListener("DOMContentLoaded", function(){
     // 4번에서 1번, 1번에서 4번 이미지로 자연스럽게 넘어가기
     reviewSlide.addEventListener("transitionend", function () {
         if (reviewItem[reviewCount].id === "review-last") {
-        reviewSlide.style.transition = "none";
-        reviewCount = reviewItem.length - 2;
-        reviewSlide.style.transform = "translateX(" + -reviewSize * reviewCount + "%)";
+            reviewSlide.style.transition = "none";
+            reviewCount = reviewItem.length - 2;
+            reviewSlide.style.transform = "translateX(" + -reviewSize * reviewCount + "%)";
         }
         if (reviewItem[reviewCount].id === "review-first") {
             reviewSlide.style.transition = "none";
-            reviewCount = reviewItem.length - reviewCount -1;
+            reviewCount = reviewItem.length - reviewCount - 1;
             reviewSlide.style.transform = "translateX(" + -reviewSize * reviewCount + "%)";
         }
     });
