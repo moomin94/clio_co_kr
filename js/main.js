@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let sec = document.querySelector('.sec');
     function showTime() {
         let stDate = new Date().getTime();
-        let edDate = new Date('2022-12-07 00:00:00').getTime();
+        let edDate = new Date('2023-06-11 00:00:00').getTime();
         let remainDate = edDate - stDate;
         let hours = Math.floor(remainDate / (1000 * 60 * 60));
         let minutes = Math.floor((remainDate % (1000 * 60 * 60)) / (1000 * 60));
